@@ -41,6 +41,13 @@ function formParams(form) {
     return params;
 }
 
+// form.reset() hanya mengembalikan field ke atribut value="…" saat halaman
+// dimuat, yang bisa berisi filter lama. Kosongkan paksa input teks.
+function clearTextInputs(form) {
+    form.querySelectorAll('input[type="text"], input[type="search"], input:not([type])')
+        .forEach((el) => { el.value = ''; });
+}
+
 function wireForm(form) {
     const base = new URL(form.action || window.location.href, window.location.href);
     const basePath = base.origin + base.pathname;
@@ -123,11 +130,11 @@ document.addEventListener('click', (e) => {
     const form = document.querySelector('form[data-ajax-filter]');
     if (!form || !form._ajaxFilter) return;
 
-    // Tombol reset abu-abu: kembalikan field ke posisi semula lalu muat tanpa filter.
     const resetBtn = e.target.closest('button[data-ajax-reset]');
     if (resetBtn) {
         e.preventDefault();
         form.reset();
+        clearTextInputs(form);
         form._ajaxFilter.fetch(form._ajaxFilter.basePath, { push: false });
         return;
     }
@@ -145,6 +152,10 @@ document.addEventListener('click', (e) => {
     const isSamePage = url.origin + url.pathname === basePath;
     if (!isReset && !isSamePage) return;
     e.preventDefault();
+    if (isReset) {
+        form.reset();
+        clearTextInputs(form);
+    }
     doFetch(isReset ? basePath : url.pathname + url.search, { push: !isReset });
 });
 

@@ -6,6 +6,7 @@ use App\Http\Controllers\AdminPaymentController;
 use App\Http\Controllers\AdminReportController;
 use App\Http\Controllers\AdminSectionController;
 use App\Http\Controllers\AdminSettingsController;
+use App\Http\Controllers\AdminSubscriberController;
 use App\Http\Controllers\AdminUserController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ArticleController;
@@ -198,6 +199,7 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::get('/payments/{payment}/proof', [AdminPaymentController::class, 'downloadProof'])->name('payments.proof.download');
     Route::post('/payments/{payment}/verify', [AdminPaymentController::class, 'verify'])->name('payments.verify');
     Route::post('/payments/{payment}/reject', [AdminPaymentController::class, 'reject'])->name('payments.reject');
+    Route::get('/subscribers', [AdminSubscriberController::class, 'index'])->name('subscribers.index');
     Route::get('/reports', [AdminReportController::class, 'index'])->name('reports.index');
     Route::get('/reports/usage.csv', [AdminReportController::class, 'usageCsv'])->name('reports.usage.csv');
     Route::get('/reports/editorial.csv', [AdminReportController::class, 'editorialCsv'])->name('reports.editorial.csv');
