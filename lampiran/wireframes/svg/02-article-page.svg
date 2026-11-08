@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1100" viewBox="0 0 1440 1100" font-family="Inter, Roboto, 'Segoe UI', Arial, sans-serif">
+<rect width="1440" height="1100" fill="#F5F6F8"/>
+<g id="header">
+<rect x="0" y="0" width="1440" height="64" fill="#FFFFFF"/>
+<circle cx="36" cy="32" r="16" fill="#1B6E5A"/>
+<text x="40" y="37" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">J</text>
+<text x="64" y="30" font-size="17" font-weight="700" fill="#111827" text-anchor="start">JOSHNU</text>
+<text x="64" y="46" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start">Journal of Sustainable Health and New Urbanism</text>
+<text x="1188" y="38" font-size="12.5" font-weight="500" fill="#6B7280" text-anchor="start">ID ▾</text>
+<rect x="1232" y="16" width="28" height="28" rx="6" fill="none" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1244" cy="28" r="6" fill="none" stroke="#6B7280" stroke-width="1.4"/>
+<line x1="1248" y1="32" x2="1252" y2="36" stroke="#6B7280" stroke-width="1.4"/>
+<rect x="1276" y="14" width="62" height="36" rx="8" fill="none" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1307" y="36" font-size="13" font-weight="500" fill="#111827" text-anchor="middle">Login</text>
+<rect x="1350" y="14" width="78" height="36" rx="8" fill="#1B6E5A"/>
+<text x="1389" y="36" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Submit</text>
+<line x1="0" y1="64" x2="1440" y2="64" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="94" font-size="13.5" font-weight="500" fill="#6B7280" text-anchor="start">Home</text>
+<text x="144" y="94" font-size="13.5" font-weight="500" fill="#6B7280" text-anchor="start">About</text>
+<text x="215" y="94" font-size="13.5" font-weight="500" fill="#6B7280" text-anchor="start">Current Issue</text>
+<text x="345" y="94" font-size="13.5" font-weight="600" fill="#1B6E5A" text-anchor="start">Archive</text>
+<line x1="343" y1="102" x2="399" y2="102" stroke="#1B6E5A" stroke-width="2.5"/>
+<text x="431" y="94" font-size="13.5" font-weight="500" fill="#6B7280" text-anchor="start">Announcements</text>
+<line x1="0" y1="104" x2="1440" y2="104" stroke="#E5E7EB" stroke-width="1"/>
+</g>
+<g id="article-header">
+<text x="80" y="134" font-size="11.5" font-weight="400" fill="#6B7280" text-anchor="start">Archive  ›  Vol 4 No 1 (2026)  ›  joshnu-v4i1-001</text>
+<rect x="80" y="150" width="96" height="24" rx="12" fill="#E6F2EF"/>
+<text x="128" y="166" font-size="11" font-weight="600" fill="#145244" text-anchor="middle">PUBLISHED</text>
+<text x="192" y="168" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">Online First</text>
+<text x="80" y="214" font-size="25" font-weight="700" fill="#111827" text-anchor="start">Taman Kota dan Kesehatan Mental: Studi Longitudinal</text>
+<text x="80" y="246" font-size="25" font-weight="700" fill="#111827" text-anchor="start">di Kota Menengah Indonesia</text>
+<text x="80" y="282" font-size="14" font-weight="500" fill="#111827" text-anchor="start">A. Budi¹*    R. Sari²    D. Pratama¹</text>
+<text x="80" y="302" font-size="11.5" font-weight="400" fill="#6B7280" text-anchor="start">¹Fakultas Kesehatan Masyarakat, Univ. Contoh    ²Program Studi Arsitektur, Inst. Teknologi Contoh    *Korespondensi: a.budi@univ.ac.id</text>
+<text x="80" y="332" font-size="11.5" font-weight="400" fill="#6B7280" text-anchor="start">Received: 01 Sep 2025    ·    Reviewed: 20 Okt 2025    ·    Accepted: 15 Des 2025    ·    Published: 01 Jan 2026</text>
+<rect x="80" y="344" width="250" height="26" rx="13" fill="#F1F5F9"/>
+<text x="94" y="361" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="start">DOI</text>
+<text x="118" y="361" font-size="11.5" font-weight="500" fill="#1B6E5A" text-anchor="start">10.xxxx/joshnu.v4i1.001</text>
+<rect x="80" y="392" width="1280" height="150" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="104" y="422" font-size="12.5" font-weight="700" fill="#6B7280" text-anchor="start">ABSTRACT</text>
+<rect x="200" y="404" width="34" height="24" rx="6" fill="#1B6E5A"/>
+<text x="217" y="420" font-size="11" font-weight="600" fill="#FFFFFF" text-anchor="middle">ID</text>
+<rect x="240" y="404" width="34" height="24" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="257" y="420" font-size="11" font-weight="600" fill="#6B7280" text-anchor="middle">EN</text>
+<text x="104" y="452" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Penelitian ini mengkaji hubungan antara frekuensi penggunaan taman kota dengan indeks kesehatan mental warga</text>
+<text x="104" y="472" font-size="13" font-weight="400" fill="#111827" text-anchor="start">kota menengah menggunakan desain longitudinal selama 12 bulan (n=1.240). Hasil menunjukkan...</text>
+<text x="104" y="492" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">...</text>
+<text x="104" y="522" font-size="12" font-weight="700" fill="#111827" text-anchor="start">Keywords:</text>
+<rect x="172" y="508" width="84" height="24" rx="12" fill="#E6F2EF"/>
+<text x="214" y="524" font-size="11" font-weight="600" fill="#145244" text-anchor="middle">taman kota</text>
+<rect x="300" y="508" width="124" height="24" rx="12" fill="#E6F2EF"/>
+<text x="362" y="524" font-size="11" font-weight="600" fill="#145244" text-anchor="middle">kesehatan mental</text>
+<rect x="428" y="508" width="97" height="24" rx="12" fill="#E6F2EF"/>
+<text x="477" y="524" font-size="11" font-weight="600" fill="#145244" text-anchor="middle">urban design</text>
+</g>
+<g id="panel-galley">
+<rect x="80" y="562" width="760" height="216" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="104" y="592" font-size="12.5" font-weight="700" fill="#6B7280" text-anchor="start">GALLEY &amp; DOKUMEN</text>
+<rect x="104" y="612" width="560" height="34" rx="8" fill="#1B6E5A"/>
+<text x="120" y="633" font-size="12.5" font-weight="600" fill="#FFFFFF" text-anchor="start">⬇  PDF — Version of Record</text>
+<text x="650" y="633" font-size="11" font-weight="500" fill="#D1FAE5" text-anchor="end">1.2 MB</text>
+<text x="120" y="668" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">⬇  PDF Proof (ber-watermark)</text>
+<text x="650" y="668" font-size="11" font-weight="400" fill="#6B7280" text-anchor="end">1.1 MB</text>
+<line x1="104" y1="680" x2="664" y2="680" stroke="#F1F5F9" stroke-width="1"/>
+<text x="120" y="706" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">⬇  Supplementary Data (2 file)</text>
+<text x="650" y="706" font-size="11" font-weight="400" fill="#6B7280" text-anchor="end">8.4 MB</text>
+<line x1="104" y1="718" x2="664" y2="718" stroke="#F1F5F9" stroke-width="1"/>
+<text x="120" y="744" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">⬇  JATS XML</text>
+<text x="650" y="744" font-size="11" font-weight="400" fill="#6B7280" text-anchor="end">184 KB</text>
+<line x1="104" y1="756" x2="664" y2="756" stroke="#F1F5F9" stroke-width="1"/>
+<text x="104" y="790" font-size="12" font-weight="500" fill="#6B7280" text-anchor="start">Views: 214    ·    Downloads: 57</text>
+</g>
+<g id="panel-citation">
+<rect x="864" y="562" width="496" height="216" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="888" y="592" font-size="12.5" font-weight="700" fill="#6B7280" text-anchor="start">CITATION &amp; SHARE</text>
+<rect x="1180" y="576" width="60" height="28" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1210" y="594" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">APA ▾</text>
+<rect x="888" y="612" width="448" height="74" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1"/>
+<text x="902" y="634" font-size="11.5" font-weight="400" fill="#111827" text-anchor="start" font-family="Menlo, monospace">Budi, A., Sari, R., &amp; Pratama, D. (2026). Taman kota dan</text>
+<text x="902" y="652" font-size="11.5" font-weight="400" fill="#111827" text-anchor="start" font-family="Menlo, monospace">kesehatan mental: studi longitudinal. JOSHNU, 4(1).</text>
+<text x="902" y="670" font-size="11.5" font-weight="400" fill="#1B6E5A" text-anchor="start" font-family="Menlo, monospace">https://doi.org/10.xxxx/joshnu.v4i1.001</text>
+<rect x="888" y="700" width="46" height="28" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="911" y="718" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">Copy</text>
+<rect x="942" y="700" width="58" height="28" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="971" y="718" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">BibTeX</text>
+<rect x="1008" y="700" width="39" height="28" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1028" y="718" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">RIS</text>
+<rect x="1055" y="700" width="65" height="28" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1088" y="718" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">EndNote</text>
+<rect x="1240" y="690" width="56" height="56" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1268" y="724" font-size="16" font-weight="400" fill="#6B7280" text-anchor="middle">▣</text>
+<text x="888" y="764" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Share:   X    Facebook    WhatsApp    Email    ⧉</text>
+</g>
+<g id="section-related">
+<text x="80" y="826" font-size="13" font-weight="700" fill="#111827" text-anchor="start">RELATED ARTICLES (by keyword / author)</text>
+<rect x="80" y="846" width="416" height="148" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="100" y="878" font-size="12.5" font-weight="600" fill="#111827" text-anchor="start">Partisipasi Warga dalam Desain Blok Ko</text>
+<text x="100" y="896" font-size="12.5" font-weight="600" fill="#111827" text-anchor="start">munal</text>
+<text x="100" y="922" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">2026 · Public Health</text>
+<text x="100" y="966" font-size="12" font-weight="600" fill="#1B6E5A" text-anchor="start">Baca →</text>
+<rect x="512" y="846" width="416" height="148" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="532" y="878" font-size="12.5" font-weight="600" fill="#111827" text-anchor="start">Urban Heat Island dan Morbiditas Jantu</text>
+<text x="532" y="896" font-size="12.5" font-weight="600" fill="#111827" text-anchor="start">ng</text>
+<text x="532" y="922" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">2026 · Public Health</text>
+<text x="532" y="966" font-size="12" font-weight="600" fill="#1B6E5A" text-anchor="start">Baca →</text>
+<rect x="944" y="846" width="416" height="148" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="964" y="878" font-size="12.5" font-weight="600" fill="#111827" text-anchor="start">Walkability dan Aktivitas Fisik Lansia</text>
+<text x="964" y="922" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">2026 · Public Health</text>
+<text x="964" y="966" font-size="12" font-weight="600" fill="#1B6E5A" text-anchor="start">Baca →</text>
+</g>
+<g id="footer">
+<rect x="0" y="1000" width="1440" height="100" fill="#0F172A"/>
+<text x="80" y="1040" font-size="11.5" font-weight="400" fill="#94A3B8" text-anchor="start">ISSN e-2XXX-XXXX  ·  © 2026 JOSHNU  ·  Open Access CC BY 4.0</text>
+<text x="80" y="1064" font-size="11.5" font-weight="400" fill="#CBD5E1" text-anchor="start">Editorial Board    |    Policies (Ethics · Open Access · APC)    |    Contact    |    Sitemap</text>
+<rect x="880" y="1026" width="480" height="40" rx="8" fill="#1E293B"/>
+<text x="896" y="1050" font-size="11.5" font-weight="400" fill="#CBD5E1" text-anchor="start">Berlangganan alert issue baru:  email@contoh.ac.id</text>
+<rect x="1304" y="1026" width="56" height="40" rx="8" fill="#1B6E5A"/>
+<text x="1332" y="1050" font-size="12" font-weight="600" fill="#FFFFFF" text-anchor="middle">OK</text>
+</g>
+</svg>

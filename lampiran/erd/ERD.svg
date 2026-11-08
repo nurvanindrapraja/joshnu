@@ -1,0 +1,1038 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2320" height="2038" viewBox="0 0 2320 2038" font-family="Inter, Roboto, 'Segoe UI', Arial, sans-serif">
+<rect width="2320" height="2038" fill="#FFFFFF"/>
+<text x="60" y="44" font-size="22" font-weight="700" fill="#111827" text-anchor="start">JOSHNU — Entity Relationship Diagram (24 tabel, MySQL 8 · InnoDB · utf8mb4)</text>
+<text x="60" y="66" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Single-jurnal · Laravel 12 · relasi: 1 (parent) → N (child) · badge: PK = primary key, UK = unique, FK = foreign key, FT = FULLTEXT</text>
+<text x="60" y="84" font-size="11.5" font-weight="400" fill="#94A3B8" text-anchor="start">Catatan: FK sekunder (uploaded_by, verified_by, assigned_by, recipient_id, created_by) disederhanakan — detail lengkap: B-ERD.md</text>
+<g id="users">
+<rect x="60" y="110" width="500" height="236" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="60" y="110" width="500" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="60" y="132" width="500" height="12" fill="#1B6E5A"/>
+<text x="72" y="132" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">users</text>
+<text x="548" y="132" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">16 kolom · 2 blok</text>
+<text x="72" y="161" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="94" y="161" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="293" y="161" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="68" y1="192" x2="299" y2="192" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="185" font-size="11" font-weight="400" fill="#111827" text-anchor="start">name</text>
+<text x="293" y="185" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(150)</text>
+<line x1="68" y1="216" x2="299" y2="216" stroke="#F1F5F9" stroke-width="1"/>
+<text x="72" y="209" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="94" y="209" font-size="11" font-weight="400" fill="#111827" text-anchor="start">email</text>
+<text x="293" y="209" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(190)</text>
+<line x1="68" y1="240" x2="299" y2="240" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="233" font-size="11" font-weight="400" fill="#111827" text-anchor="start">email_verified_at</text>
+<text x="293" y="233" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="68" y1="264" x2="299" y2="264" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="257" font-size="11" font-weight="400" fill="#111827" text-anchor="start">password</text>
+<text x="293" y="257" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="68" y1="288" x2="299" y2="288" stroke="#F1F5F9" stroke-width="1"/>
+<text x="72" y="281" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="94" y="281" font-size="11" font-weight="400" fill="#111827" text-anchor="start">orcid</text>
+<text x="293" y="281" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(19)</text>
+<line x1="68" y1="312" x2="299" y2="312" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="305" font-size="11" font-weight="400" fill="#111827" text-anchor="start">institution</text>
+<text x="293" y="305" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="68" y1="336" x2="299" y2="336" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="329" font-size="11" font-weight="400" fill="#111827" text-anchor="start">expertise</text>
+<text x="293" y="329" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<text x="349" y="161" font-size="11" font-weight="400" fill="#111827" text-anchor="start">address</text>
+<text x="548" y="161" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="323" y1="192" x2="554" y2="192" stroke="#F1F5F9" stroke-width="1"/>
+<text x="349" y="185" font-size="11" font-weight="400" fill="#111827" text-anchor="start">phone</text>
+<text x="548" y="185" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(30)</text>
+<line x1="323" y1="216" x2="554" y2="216" stroke="#F1F5F9" stroke-width="1"/>
+<text x="349" y="209" font-size="11" font-weight="400" fill="#111827" text-anchor="start">website</text>
+<text x="548" y="209" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="323" y1="240" x2="554" y2="240" stroke="#F1F5F9" stroke-width="1"/>
+<text x="349" y="233" font-size="11" font-weight="400" fill="#111827" text-anchor="start">is_active</text>
+<text x="548" y="233" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="323" y1="264" x2="554" y2="264" stroke="#F1F5F9" stroke-width="1"/>
+<text x="349" y="257" font-size="11" font-weight="400" fill="#111827" text-anchor="start">two_factor_secret</text>
+<text x="548" y="257" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="323" y1="288" x2="554" y2="288" stroke="#F1F5F9" stroke-width="1"/>
+<text x="349" y="281" font-size="11" font-weight="400" fill="#111827" text-anchor="start">two_factor_confirmed_at</text>
+<text x="548" y="281" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="323" y1="312" x2="554" y2="312" stroke="#F1F5F9" stroke-width="1"/>
+<text x="349" y="305" font-size="11" font-weight="400" fill="#111827" text-anchor="start">remember_token</text>
+<text x="548" y="305" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(100)</text>
+<line x1="323" y1="336" x2="554" y2="336" stroke="#F1F5F9" stroke-width="1"/>
+<text x="349" y="329" font-size="11" font-weight="400" fill="#111827" text-anchor="start">deleted_at</text>
+<text x="548" y="329" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="submissions">
+<rect x="600" y="110" width="230" height="356" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="600" y="110" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="600" y="132" width="230" height="12" fill="#1B6E5A"/>
+<text x="612" y="132" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">submissions</text>
+<text x="818" y="132" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">13 kolom</text>
+<text x="612" y="161" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="634" y="161" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="794" y="161" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="192" x2="800" y2="192" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="185" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="634" y="185" font-size="11" font-weight="400" fill="#111827" text-anchor="start">reference_no</text>
+<text x="794" y="185" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(25)</text>
+<line x1="608" y1="216" x2="800" y2="216" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="209" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="634" y="209" font-size="11" font-weight="400" fill="#111827" text-anchor="start">author_id</text>
+<text x="794" y="209" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="240" x2="800" y2="240" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="233" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="634" y="233" font-size="11" font-weight="400" fill="#111827" text-anchor="start">section_id</text>
+<text x="794" y="233" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="264" x2="800" y2="264" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="257" font-size="11" font-weight="400" fill="#111827" text-anchor="start">stage</text>
+<text x="794" y="257" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(9)</text>
+<line x1="608" y1="288" x2="800" y2="288" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="281" font-size="11" font-weight="400" fill="#111827" text-anchor="start">current_round</text>
+<text x="794" y="281" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="608" y1="312" x2="800" y2="312" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="305" font-size="8.5" font-weight="700" fill="#0D9488" text-anchor="start">FT</text>
+<text x="634" y="305" font-size="11" font-weight="400" fill="#111827" text-anchor="start">title</text>
+<text x="794" y="305" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(500)</text>
+<line x1="608" y1="336" x2="800" y2="336" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="329" font-size="11" font-weight="400" fill="#111827" text-anchor="start">cover_letter</text>
+<text x="794" y="329" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="608" y1="360" x2="800" y2="360" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="353" font-size="11" font-weight="400" fill="#111827" text-anchor="start">conflict_of_interest</text>
+<text x="794" y="353" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="608" y1="384" x2="800" y2="384" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="377" font-size="11" font-weight="400" fill="#111827" text-anchor="start">suggested_reviewers</text>
+<text x="794" y="377" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="608" y1="408" x2="800" y2="408" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="401" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submitted_at</text>
+<text x="794" y="401" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="608" y1="432" x2="800" y2="432" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="425" font-size="11" font-weight="400" fill="#111827" text-anchor="start">withdrawn_at</text>
+<text x="794" y="425" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="608" y1="456" x2="800" y2="456" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="449" font-size="11" font-weight="400" fill="#111827" text-anchor="start">deleted_at</text>
+<text x="794" y="449" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="sections">
+<rect x="870" y="110" width="230" height="188" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="870" y="110" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="870" y="132" width="230" height="12" fill="#1B6E5A"/>
+<text x="882" y="132" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">sections</text>
+<text x="1088" y="132" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">6 kolom</text>
+<text x="882" y="161" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="904" y="161" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1064" y="161" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="878" y1="192" x2="1070" y2="192" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="185" font-size="11" font-weight="400" fill="#111827" text-anchor="start">name</text>
+<text x="1064" y="185" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(150)</text>
+<line x1="878" y1="216" x2="1070" y2="216" stroke="#F1F5F9" stroke-width="1"/>
+<text x="882" y="209" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="904" y="209" font-size="11" font-weight="400" fill="#111827" text-anchor="start">slug</text>
+<text x="1064" y="209" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(170)</text>
+<line x1="878" y1="240" x2="1070" y2="240" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="233" font-size="11" font-weight="400" fill="#111827" text-anchor="start">description</text>
+<text x="1064" y="233" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="878" y1="264" x2="1070" y2="264" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="257" font-size="11" font-weight="400" fill="#111827" text-anchor="start">sort_order</text>
+<text x="1064" y="257" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">SMALLINT</text>
+<line x1="878" y1="288" x2="1070" y2="288" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="281" font-size="11" font-weight="400" fill="#111827" text-anchor="start">is_active</text>
+<text x="1064" y="281" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+</g>
+<g id="issues">
+<rect x="1140" y="110" width="230" height="236" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1140" y="110" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1140" y="132" width="230" height="12" fill="#1B6E5A"/>
+<text x="1152" y="132" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">issues</text>
+<text x="1358" y="132" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">8 kolom</text>
+<text x="1152" y="161" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1174" y="161" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1334" y="161" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="192" x2="1340" y2="192" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="185" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="1174" y="185" font-size="11" font-weight="400" fill="#111827" text-anchor="start">volume</text>
+<text x="1334" y="185" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">SMALLINT</text>
+<line x1="1148" y1="216" x2="1340" y2="216" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="209" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="1174" y="209" font-size="11" font-weight="400" fill="#111827" text-anchor="start">number</text>
+<text x="1334" y="209" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">SMALLINT</text>
+<line x1="1148" y1="240" x2="1340" y2="240" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="233" font-size="11" font-weight="400" fill="#111827" text-anchor="start">year</text>
+<text x="1334" y="233" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">SMALLINT</text>
+<line x1="1148" y1="264" x2="1340" y2="264" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="257" font-size="11" font-weight="400" fill="#111827" text-anchor="start">title</text>
+<text x="1334" y="257" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="1148" y1="288" x2="1340" y2="288" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="281" font-size="11" font-weight="400" fill="#111827" text-anchor="start">cover_path</text>
+<text x="1334" y="281" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="1148" y1="312" x2="1340" y2="312" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="305" font-size="11" font-weight="400" fill="#111827" text-anchor="start">published_at</text>
+<text x="1334" y="305" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="1148" y1="336" x2="1340" y2="336" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="329" font-size="11" font-weight="400" fill="#111827" text-anchor="start">deleted_at</text>
+<text x="1334" y="329" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="journal_settings">
+<rect x="1410" y="110" width="500" height="380" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1410" y="110" width="500" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1410" y="132" width="500" height="12" fill="#1B6E5A"/>
+<text x="1422" y="132" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">journal_settings</text>
+<text x="1898" y="132" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">28 kolom · 2 blok</text>
+<text x="1422" y="161" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1444" y="161" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1643" y="161" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1418" y1="192" x2="1649" y2="192" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="185" font-size="11" font-weight="400" fill="#111827" text-anchor="start">name</text>
+<text x="1643" y="185" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="1418" y1="216" x2="1649" y2="216" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="209" font-size="11" font-weight="400" fill="#111827" text-anchor="start">short_name</text>
+<text x="1643" y="209" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(50)</text>
+<line x1="1418" y1="240" x2="1649" y2="240" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="233" font-size="11" font-weight="400" fill="#111827" text-anchor="start">tagline</text>
+<text x="1643" y="233" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="1418" y1="264" x2="1649" y2="264" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="257" font-size="11" font-weight="400" fill="#111827" text-anchor="start">issn_print</text>
+<text x="1643" y="257" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(20)</text>
+<line x1="1418" y1="288" x2="1649" y2="288" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="281" font-size="11" font-weight="400" fill="#111827" text-anchor="start">issn_online</text>
+<text x="1643" y="281" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(20)</text>
+<line x1="1418" y1="312" x2="1649" y2="312" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="305" font-size="11" font-weight="400" fill="#111827" text-anchor="start">scope</text>
+<text x="1643" y="305" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1418" y1="336" x2="1649" y2="336" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="329" font-size="11" font-weight="400" fill="#111827" text-anchor="start">description</text>
+<text x="1643" y="329" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">LONGTEXT</text>
+<line x1="1418" y1="360" x2="1649" y2="360" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="353" font-size="11" font-weight="400" fill="#111827" text-anchor="start">ethics_policy</text>
+<text x="1643" y="353" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">LONGTEXT</text>
+<line x1="1418" y1="384" x2="1649" y2="384" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="377" font-size="11" font-weight="400" fill="#111827" text-anchor="start">oa_policy</text>
+<text x="1643" y="377" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">LONGTEXT</text>
+<line x1="1418" y1="408" x2="1649" y2="408" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="401" font-size="11" font-weight="400" fill="#111827" text-anchor="start">apc_policy</text>
+<text x="1643" y="401" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">LONGTEXT</text>
+<line x1="1418" y1="432" x2="1649" y2="432" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="425" font-size="11" font-weight="400" fill="#111827" text-anchor="start">editorial_board</text>
+<text x="1643" y="425" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="1418" y1="456" x2="1649" y2="456" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="449" font-size="11" font-weight="400" fill="#111827" text-anchor="start">apc_enabled</text>
+<text x="1643" y="449" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="1418" y1="480" x2="1649" y2="480" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="473" font-size="11" font-weight="400" fill="#111827" text-anchor="start">apc_amount</text>
+<text x="1643" y="473" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DECIMAL(12,2)</text>
+<text x="1699" y="161" font-size="11" font-weight="400" fill="#111827" text-anchor="start">apc_currency</text>
+<text x="1898" y="161" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">CHAR(3)</text>
+<line x1="1673" y1="192" x2="1904" y2="192" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="185" font-size="11" font-weight="400" fill="#111827" text-anchor="start">apc_bank</text>
+<text x="1898" y="185" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="1673" y1="216" x2="1904" y2="216" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="209" font-size="11" font-weight="400" fill="#111827" text-anchor="start">review_mode</text>
+<text x="1898" y="209" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(3)</text>
+<line x1="1673" y1="240" x2="1904" y2="240" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="233" font-size="11" font-weight="400" fill="#111827" text-anchor="start">max_review_rounds</text>
+<text x="1898" y="233" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1673" y1="264" x2="1904" y2="264" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="257" font-size="11" font-weight="400" fill="#111827" text-anchor="start">review_deadline_days</text>
+<text x="1898" y="257" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1673" y1="288" x2="1904" y2="288" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="281" font-size="11" font-weight="400" fill="#111827" text-anchor="start">reminder_before_days</text>
+<text x="1898" y="281" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1673" y1="312" x2="1904" y2="312" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="305" font-size="11" font-weight="400" fill="#111827" text-anchor="start">online_first_enabled</text>
+<text x="1898" y="305" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="1673" y1="336" x2="1904" y2="336" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="329" font-size="11" font-weight="400" fill="#111827" text-anchor="start">doi_prefix</text>
+<text x="1898" y="329" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(40)</text>
+<line x1="1673" y1="360" x2="1904" y2="360" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="353" font-size="11" font-weight="400" fill="#111827" text-anchor="start">doi_suffix_pattern</text>
+<text x="1898" y="353" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(60)</text>
+<line x1="1673" y1="384" x2="1904" y2="384" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="377" font-size="11" font-weight="400" fill="#111827" text-anchor="start">theme</text>
+<text x="1898" y="377" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="1673" y1="408" x2="1904" y2="408" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="401" font-size="11" font-weight="400" fill="#111827" text-anchor="start">contact_email</text>
+<text x="1898" y="401" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(190)</text>
+<line x1="1673" y1="432" x2="1904" y2="432" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="425" font-size="11" font-weight="400" fill="#111827" text-anchor="start">address</text>
+<text x="1898" y="425" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1673" y1="456" x2="1904" y2="456" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="449" font-size="11" font-weight="400" fill="#111827" text-anchor="start">social</text>
+<text x="1898" y="449" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="1673" y1="480" x2="1904" y2="480" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1699" y="473" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at/updated_at</text>
+<text x="1898" y="473" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="user_roles">
+<rect x="60" y="580" width="230" height="140" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="60" y="580" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="60" y="602" width="230" height="12" fill="#1B6E5A"/>
+<text x="72" y="602" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">user_roles</text>
+<text x="278" y="602" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">4 kolom</text>
+<text x="72" y="631" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="94" y="631" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="254" y="631" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="68" y1="662" x2="260" y2="662" stroke="#F1F5F9" stroke-width="1"/>
+<text x="72" y="655" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="94" y="655" font-size="11" font-weight="400" fill="#111827" text-anchor="start">user_id</text>
+<text x="254" y="655" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="68" y1="686" x2="260" y2="686" stroke="#F1F5F9" stroke-width="1"/>
+<text x="72" y="679" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="94" y="679" font-size="11" font-weight="400" fill="#111827" text-anchor="start">role</text>
+<text x="254" y="679" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(6)</text>
+<line x1="68" y1="710" x2="260" y2="710" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="703" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="254" y="703" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="submission_authors">
+<rect x="330" y="580" width="230" height="260" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="330" y="580" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="330" y="602" width="230" height="12" fill="#1B6E5A"/>
+<text x="342" y="602" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">submission_authors</text>
+<text x="548" y="602" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">9 kolom</text>
+<text x="342" y="631" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="364" y="631" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="524" y="631" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="338" y1="662" x2="530" y2="662" stroke="#F1F5F9" stroke-width="1"/>
+<text x="342" y="655" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="364" y="655" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="524" y="655" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="338" y1="686" x2="530" y2="686" stroke="#F1F5F9" stroke-width="1"/>
+<text x="342" y="679" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="364" y="679" font-size="11" font-weight="400" fill="#111827" text-anchor="start">user_id</text>
+<text x="524" y="679" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="338" y1="710" x2="530" y2="710" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="703" font-size="11" font-weight="400" fill="#111827" text-anchor="start">name</text>
+<text x="524" y="703" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(150)</text>
+<line x1="338" y1="734" x2="530" y2="734" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="727" font-size="11" font-weight="400" fill="#111827" text-anchor="start">email</text>
+<text x="524" y="727" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(190)</text>
+<line x1="338" y1="758" x2="530" y2="758" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="751" font-size="11" font-weight="400" fill="#111827" text-anchor="start">orcid</text>
+<text x="524" y="751" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(19)</text>
+<line x1="338" y1="782" x2="530" y2="782" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="775" font-size="11" font-weight="400" fill="#111827" text-anchor="start">institution</text>
+<text x="524" y="775" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="338" y1="806" x2="530" y2="806" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="799" font-size="11" font-weight="400" fill="#111827" text-anchor="start">is_corresponding</text>
+<text x="524" y="799" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="338" y1="830" x2="530" y2="830" stroke="#F1F5F9" stroke-width="1"/>
+<text x="342" y="823" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="364" y="823" font-size="11" font-weight="400" fill="#111827" text-anchor="start">display_order</text>
+<text x="524" y="823" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">SMALLINT</text>
+</g>
+<g id="submission_files">
+<rect x="600" y="580" width="230" height="308" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="600" y="580" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="600" y="602" width="230" height="12" fill="#1B6E5A"/>
+<text x="612" y="602" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">submission_files</text>
+<text x="818" y="602" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">11 kolom</text>
+<text x="612" y="631" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="634" y="631" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="794" y="631" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="662" x2="800" y2="662" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="655" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="634" y="655" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="794" y="655" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="686" x2="800" y2="686" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="679" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="634" y="679" font-size="11" font-weight="400" fill="#111827" text-anchor="start">revision_id</text>
+<text x="794" y="679" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="710" x2="800" y2="710" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="703" font-size="11" font-weight="400" fill="#111827" text-anchor="start">type</text>
+<text x="794" y="703" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(8)</text>
+<line x1="608" y1="734" x2="800" y2="734" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="727" font-size="11" font-weight="400" fill="#111827" text-anchor="start">original_name</text>
+<text x="794" y="727" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="608" y1="758" x2="800" y2="758" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="751" font-size="11" font-weight="400" fill="#111827" text-anchor="start">path</text>
+<text x="794" y="751" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(500)</text>
+<line x1="608" y1="782" x2="800" y2="782" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="775" font-size="11" font-weight="400" fill="#111827" text-anchor="start">mime_type</text>
+<text x="794" y="775" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(100)</text>
+<line x1="608" y1="806" x2="800" y2="806" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="799" font-size="11" font-weight="400" fill="#111827" text-anchor="start">size_bytes</text>
+<text x="794" y="799" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">INT UNSIGNED</text>
+<line x1="608" y1="830" x2="800" y2="830" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="823" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="634" y="823" font-size="11" font-weight="400" fill="#111827" text-anchor="start">uploaded_by</text>
+<text x="794" y="823" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="854" x2="800" y2="854" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="847" font-size="11" font-weight="400" fill="#111827" text-anchor="start">deleted_at</text>
+<text x="794" y="847" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="608" y1="878" x2="800" y2="878" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="871" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="794" y="871" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="submission_revisions">
+<rect x="870" y="580" width="230" height="164" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="870" y="580" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="870" y="602" width="230" height="12" fill="#1B6E5A"/>
+<text x="882" y="602" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">submission_revisions</text>
+<text x="1088" y="602" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">5 kolom</text>
+<text x="882" y="631" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="904" y="631" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1064" y="631" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="878" y1="662" x2="1070" y2="662" stroke="#F1F5F9" stroke-width="1"/>
+<text x="882" y="655" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="904" y="655" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="1064" y="655" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="878" y1="686" x2="1070" y2="686" stroke="#F1F5F9" stroke-width="1"/>
+<text x="882" y="679" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="904" y="679" font-size="11" font-weight="400" fill="#111827" text-anchor="start">version</text>
+<text x="1064" y="679" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="878" y1="710" x2="1070" y2="710" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="703" font-size="11" font-weight="400" fill="#111827" text-anchor="start">note</text>
+<text x="1064" y="703" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="878" y1="734" x2="1070" y2="734" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="727" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1064" y="727" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="reviews">
+<rect x="1140" y="580" width="230" height="452" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1140" y="580" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1140" y="602" width="230" height="12" fill="#1B6E5A"/>
+<text x="1152" y="602" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">reviews</text>
+<text x="1358" y="602" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">17 kolom</text>
+<text x="1152" y="631" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1174" y="631" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1334" y="631" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="662" x2="1340" y2="662" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="655" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1174" y="655" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="1334" y="655" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="686" x2="1340" y2="686" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="679" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1174" y="679" font-size="11" font-weight="400" fill="#111827" text-anchor="start">reviewer_id</text>
+<text x="1334" y="679" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="710" x2="1340" y2="710" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="703" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="1174" y="703" font-size="11" font-weight="400" fill="#111827" text-anchor="start">round</text>
+<text x="1334" y="703" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1148" y1="734" x2="1340" y2="734" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="727" font-size="11" font-weight="400" fill="#111827" text-anchor="start">status</text>
+<text x="1334" y="727" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(7)</text>
+<line x1="1148" y1="758" x2="1340" y2="758" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="751" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="1174" y="751" font-size="11" font-weight="400" fill="#111827" text-anchor="start">invite_token</text>
+<text x="1334" y="751" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">CHAR(64)</text>
+<line x1="1148" y1="782" x2="1340" y2="782" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="775" font-size="11" font-weight="400" fill="#111827" text-anchor="start">decline_reason</text>
+<text x="1334" y="775" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1148" y1="806" x2="1340" y2="806" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="799" font-size="11" font-weight="400" fill="#111827" text-anchor="start">recommended_decision</text>
+<text x="1334" y="799" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(4)</text>
+<line x1="1148" y1="830" x2="1340" y2="830" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="823" font-size="11" font-weight="400" fill="#111827" text-anchor="start">rating_novelty</text>
+<text x="1334" y="823" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1148" y1="854" x2="1340" y2="854" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="847" font-size="11" font-weight="400" fill="#111827" text-anchor="start">rating_methodology</text>
+<text x="1334" y="847" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1148" y1="878" x2="1340" y2="878" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="871" font-size="11" font-weight="400" fill="#111827" text-anchor="start">rating_clarity</text>
+<text x="1334" y="871" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1148" y1="902" x2="1340" y2="902" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="895" font-size="11" font-weight="400" fill="#111827" text-anchor="start">rating_contribution</text>
+<text x="1334" y="895" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1148" y1="926" x2="1340" y2="926" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="919" font-size="11" font-weight="400" fill="#111827" text-anchor="start">comments_to_author</text>
+<text x="1334" y="919" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1148" y1="950" x2="1340" y2="950" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="943" font-size="11" font-weight="400" fill="#111827" text-anchor="start">comments_to_editor</text>
+<text x="1334" y="943" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1148" y1="974" x2="1340" y2="974" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="967" font-size="11" font-weight="400" fill="#111827" text-anchor="start">due_at</text>
+<text x="1334" y="967" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="1148" y1="998" x2="1340" y2="998" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="991" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submitted_at</text>
+<text x="1334" y="991" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="1148" y1="1022" x2="1340" y2="1022" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1015" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1334" y="1015" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="decisions">
+<rect x="1410" y="580" width="230" height="284" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1410" y="580" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1410" y="602" width="230" height="12" fill="#1B6E5A"/>
+<text x="1422" y="602" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">decisions</text>
+<text x="1628" y="602" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">10 kolom</text>
+<text x="1422" y="631" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1444" y="631" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1604" y="631" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1418" y1="662" x2="1610" y2="662" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1422" y="655" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1444" y="655" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="1604" y="655" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1418" y1="686" x2="1610" y2="686" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1422" y="679" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1444" y="679" font-size="11" font-weight="400" fill="#111827" text-anchor="start">editor_id</text>
+<text x="1604" y="679" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1418" y1="710" x2="1610" y2="710" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="703" font-size="11" font-weight="400" fill="#111827" text-anchor="start">round</text>
+<text x="1604" y="703" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT</text>
+<line x1="1418" y1="734" x2="1610" y2="734" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="727" font-size="11" font-weight="400" fill="#111827" text-anchor="start">type</text>
+<text x="1604" y="727" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(5)</text>
+<line x1="1418" y1="758" x2="1610" y2="758" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="751" font-size="11" font-weight="400" fill="#111827" text-anchor="start">comment_to_author</text>
+<text x="1604" y="751" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1418" y1="782" x2="1610" y2="782" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="775" font-size="11" font-weight="400" fill="#111827" text-anchor="start">internal_note</text>
+<text x="1604" y="775" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1418" y1="806" x2="1610" y2="806" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="799" font-size="11" font-weight="400" fill="#111827" text-anchor="start">revision_due_at</text>
+<text x="1604" y="799" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="1418" y1="830" x2="1610" y2="830" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="823" font-size="11" font-weight="400" fill="#111827" text-anchor="start">decided_at</text>
+<text x="1604" y="823" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="1418" y1="854" x2="1610" y2="854" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="847" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1604" y="847" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="payments">
+<rect x="1680" y="580" width="230" height="428" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1680" y="580" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1680" y="602" width="230" height="12" fill="#1B6E5A"/>
+<text x="1692" y="602" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">payments</text>
+<text x="1898" y="602" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">16 kolom</text>
+<text x="1692" y="631" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1714" y="631" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1874" y="631" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1688" y1="662" x2="1880" y2="662" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1692" y="655" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1714" y="655" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="1874" y="655" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1688" y1="686" x2="1880" y2="686" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1692" y="679" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="1714" y="679" font-size="11" font-weight="400" fill="#111827" text-anchor="start">invoice_no</text>
+<text x="1874" y="679" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(30)</text>
+<line x1="1688" y1="710" x2="1880" y2="710" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="703" font-size="11" font-weight="400" fill="#111827" text-anchor="start">amount</text>
+<text x="1874" y="703" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DECIMAL(12,2)</text>
+<line x1="1688" y1="734" x2="1880" y2="734" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="727" font-size="11" font-weight="400" fill="#111827" text-anchor="start">currency</text>
+<text x="1874" y="727" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">CHAR(3)</text>
+<line x1="1688" y1="758" x2="1880" y2="758" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="751" font-size="11" font-weight="400" fill="#111827" text-anchor="start">status</text>
+<text x="1874" y="751" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(7)</text>
+<line x1="1688" y1="782" x2="1880" y2="782" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="775" font-size="11" font-weight="400" fill="#111827" text-anchor="start">due_at</text>
+<text x="1874" y="775" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="1688" y1="806" x2="1880" y2="806" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="799" font-size="11" font-weight="400" fill="#111827" text-anchor="start">payer_name</text>
+<text x="1874" y="799" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(150)</text>
+<line x1="1688" y1="830" x2="1880" y2="830" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="823" font-size="11" font-weight="400" fill="#111827" text-anchor="start">proof_path</text>
+<text x="1874" y="823" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(500)</text>
+<line x1="1688" y1="854" x2="1880" y2="854" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="847" font-size="11" font-weight="400" fill="#111827" text-anchor="start">rejected_reason</text>
+<text x="1874" y="847" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1688" y1="878" x2="1880" y2="878" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1692" y="871" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1714" y="871" font-size="11" font-weight="400" fill="#111827" text-anchor="start">verified_by</text>
+<text x="1874" y="871" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1688" y1="902" x2="1880" y2="902" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="895" font-size="11" font-weight="400" fill="#111827" text-anchor="start">verified_at</text>
+<text x="1874" y="895" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="1688" y1="926" x2="1880" y2="926" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="919" font-size="11" font-weight="400" fill="#111827" text-anchor="start">gateway</text>
+<text x="1874" y="919" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(30)</text>
+<line x1="1688" y1="950" x2="1880" y2="950" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="943" font-size="11" font-weight="400" fill="#111827" text-anchor="start">gateway_payment_id</text>
+<text x="1874" y="943" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(100)</text>
+<line x1="1688" y1="974" x2="1880" y2="974" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="967" font-size="11" font-weight="400" fill="#111827" text-anchor="start">webhook_log</text>
+<text x="1874" y="967" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="1688" y1="998" x2="1880" y2="998" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="991" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1874" y="991" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="messages">
+<rect x="1950" y="580" width="230" height="260" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1950" y="580" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1950" y="602" width="230" height="12" fill="#1B6E5A"/>
+<text x="1962" y="602" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">messages</text>
+<text x="2168" y="602" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">9 kolom</text>
+<text x="1962" y="631" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1984" y="631" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="2144" y="631" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1958" y1="662" x2="2150" y2="662" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1962" y="655" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1984" y="655" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="2144" y="655" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1958" y1="686" x2="2150" y2="686" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1962" y="679" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1984" y="679" font-size="11" font-weight="400" fill="#111827" text-anchor="start">sender_id</text>
+<text x="2144" y="679" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1958" y1="710" x2="2150" y2="710" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1984" y="703" font-size="11" font-weight="400" fill="#111827" text-anchor="start">recipient_type</text>
+<text x="2144" y="703" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(4)</text>
+<line x1="1958" y1="734" x2="2150" y2="734" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1962" y="727" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1984" y="727" font-size="11" font-weight="400" fill="#111827" text-anchor="start">recipient_id</text>
+<text x="2144" y="727" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1958" y1="758" x2="2150" y2="758" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1984" y="751" font-size="11" font-weight="400" fill="#111827" text-anchor="start">subject</text>
+<text x="2144" y="751" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="1958" y1="782" x2="2150" y2="782" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1984" y="775" font-size="11" font-weight="400" fill="#111827" text-anchor="start">body</text>
+<text x="2144" y="775" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1958" y1="806" x2="2150" y2="806" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1984" y="799" font-size="11" font-weight="400" fill="#111827" text-anchor="start">is_internal</text>
+<text x="2144" y="799" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="1958" y1="830" x2="2150" y2="830" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1984" y="823" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="2144" y="823" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="notifications">
+<rect x="60" y="1122" width="230" height="188" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="60" y="1122" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="60" y="1144" width="230" height="12" fill="#1B6E5A"/>
+<text x="72" y="1144" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">notifications</text>
+<text x="278" y="1144" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">6 kolom</text>
+<text x="72" y="1173" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="94" y="1173" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="254" y="1173" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="68" y1="1204" x2="260" y2="1204" stroke="#F1F5F9" stroke-width="1"/>
+<text x="72" y="1197" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="94" y="1197" font-size="11" font-weight="400" fill="#111827" text-anchor="start">user_id</text>
+<text x="254" y="1197" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="68" y1="1228" x2="260" y2="1228" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1221" font-size="11" font-weight="400" fill="#111827" text-anchor="start">type</text>
+<text x="254" y="1221" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(50)</text>
+<line x1="68" y1="1252" x2="260" y2="1252" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1245" font-size="11" font-weight="400" fill="#111827" text-anchor="start">data</text>
+<text x="254" y="1245" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="68" y1="1276" x2="260" y2="1276" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1269" font-size="11" font-weight="400" fill="#111827" text-anchor="start">read_at</text>
+<text x="254" y="1269" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="68" y1="1300" x2="260" y2="1300" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1293" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="254" y="1293" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="audit_logs">
+<rect x="330" y="1122" width="230" height="236" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="330" y="1122" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="330" y="1144" width="230" height="12" fill="#1B6E5A"/>
+<text x="342" y="1144" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">audit_logs</text>
+<text x="548" y="1144" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">8 kolom</text>
+<text x="342" y="1173" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="364" y="1173" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="524" y="1173" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="338" y1="1204" x2="530" y2="1204" stroke="#F1F5F9" stroke-width="1"/>
+<text x="342" y="1197" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="364" y="1197" font-size="11" font-weight="400" fill="#111827" text-anchor="start">user_id</text>
+<text x="524" y="1197" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="338" y1="1228" x2="530" y2="1228" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="1221" font-size="11" font-weight="400" fill="#111827" text-anchor="start">action</text>
+<text x="524" y="1221" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(100)</text>
+<line x1="338" y1="1252" x2="530" y2="1252" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="1245" font-size="11" font-weight="400" fill="#111827" text-anchor="start">entity_type</text>
+<text x="524" y="1245" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(50)</text>
+<line x1="338" y1="1276" x2="530" y2="1276" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="1269" font-size="11" font-weight="400" fill="#111827" text-anchor="start">entity_id</text>
+<text x="524" y="1269" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="338" y1="1300" x2="530" y2="1300" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="1293" font-size="11" font-weight="400" fill="#111827" text-anchor="start">ip</text>
+<text x="524" y="1293" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARBINARY(16)</text>
+<line x1="338" y1="1324" x2="530" y2="1324" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="1317" font-size="11" font-weight="400" fill="#111827" text-anchor="start">meta</text>
+<text x="524" y="1317" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="338" y1="1348" x2="530" y2="1348" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="1341" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="524" y="1341" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="submission_events">
+<rect x="600" y="1122" width="230" height="236" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="600" y="1122" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="600" y="1144" width="230" height="12" fill="#1B6E5A"/>
+<text x="612" y="1144" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">submission_events</text>
+<text x="818" y="1144" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">8 kolom</text>
+<text x="612" y="1173" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="634" y="1173" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="794" y="1173" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="1204" x2="800" y2="1204" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="1197" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="634" y="1197" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="794" y="1197" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="1228" x2="800" y2="1228" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="1221" font-size="11" font-weight="400" fill="#111827" text-anchor="start">event</text>
+<text x="794" y="1221" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(50)</text>
+<line x1="608" y1="1252" x2="800" y2="1252" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="1245" font-size="11" font-weight="400" fill="#111827" text-anchor="start">from_stage</text>
+<text x="794" y="1245" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(25)</text>
+<line x1="608" y1="1276" x2="800" y2="1276" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="1269" font-size="11" font-weight="400" fill="#111827" text-anchor="start">to_stage</text>
+<text x="794" y="1269" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(25)</text>
+<line x1="608" y1="1300" x2="800" y2="1300" stroke="#F1F5F9" stroke-width="1"/>
+<text x="612" y="1293" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="634" y="1293" font-size="11" font-weight="400" fill="#111827" text-anchor="start">actor_id</text>
+<text x="794" y="1293" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="608" y1="1324" x2="800" y2="1324" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="1317" font-size="11" font-weight="400" fill="#111827" text-anchor="start">meta</text>
+<text x="794" y="1317" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="608" y1="1348" x2="800" y2="1348" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="1341" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="794" y="1341" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="assignments">
+<rect x="870" y="1122" width="230" height="236" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="870" y="1122" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="870" y="1144" width="230" height="12" fill="#1B6E5A"/>
+<text x="882" y="1144" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">assignments</text>
+<text x="1088" y="1144" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">8 kolom</text>
+<text x="882" y="1173" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="904" y="1173" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1064" y="1173" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="878" y1="1204" x2="1070" y2="1204" stroke="#F1F5F9" stroke-width="1"/>
+<text x="882" y="1197" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="904" y="1197" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="1064" y="1197" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="878" y1="1228" x2="1070" y2="1228" stroke="#F1F5F9" stroke-width="1"/>
+<text x="882" y="1221" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="904" y="1221" font-size="11" font-weight="400" fill="#111827" text-anchor="start">user_id</text>
+<text x="1064" y="1221" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="878" y1="1252" x2="1070" y2="1252" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="1245" font-size="11" font-weight="400" fill="#111827" text-anchor="start">type</text>
+<text x="1064" y="1245" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(2)</text>
+<line x1="878" y1="1276" x2="1070" y2="1276" stroke="#F1F5F9" stroke-width="1"/>
+<text x="882" y="1269" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="904" y="1269" font-size="11" font-weight="400" fill="#111827" text-anchor="start">assigned_by</text>
+<text x="1064" y="1269" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="878" y1="1300" x2="1070" y2="1300" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="1293" font-size="11" font-weight="400" fill="#111827" text-anchor="start">assigned_at</text>
+<text x="1064" y="1293" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="878" y1="1324" x2="1070" y2="1324" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="1317" font-size="11" font-weight="400" fill="#111827" text-anchor="start">completed_at</text>
+<text x="1064" y="1317" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="878" y1="1348" x2="1070" y2="1348" stroke="#F1F5F9" stroke-width="1"/>
+<text x="904" y="1341" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1064" y="1341" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="publications">
+<rect x="1140" y="1122" width="230" height="476" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1140" y="1122" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1140" y="1144" width="230" height="12" fill="#1B6E5A"/>
+<text x="1152" y="1144" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">publications</text>
+<text x="1358" y="1144" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">18 kolom</text>
+<text x="1152" y="1173" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1174" y="1173" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1334" y="1173" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="1204" x2="1340" y2="1204" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1197" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1174" y="1197" font-size="11" font-weight="400" fill="#111827" text-anchor="start">submission_id</text>
+<text x="1334" y="1197" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="1228" x2="1340" y2="1228" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1221" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1174" y="1221" font-size="11" font-weight="400" fill="#111827" text-anchor="start">issue_id</text>
+<text x="1334" y="1221" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="1252" x2="1340" y2="1252" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1245" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1174" y="1245" font-size="11" font-weight="400" fill="#111827" text-anchor="start">section_id</text>
+<text x="1334" y="1245" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="1276" x2="1340" y2="1276" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1269" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="1174" y="1269" font-size="11" font-weight="400" fill="#111827" text-anchor="start">slug</text>
+<text x="1334" y="1269" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(200)</text>
+<line x1="1148" y1="1300" x2="1340" y2="1300" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1293" font-size="11" font-weight="400" fill="#111827" text-anchor="start">published_at</text>
+<text x="1334" y="1293" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="1148" y1="1324" x2="1340" y2="1324" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1317" font-size="11" font-weight="400" fill="#111827" text-anchor="start">is_online_first</text>
+<text x="1334" y="1317" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="1148" y1="1348" x2="1340" y2="1348" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1341" font-size="11" font-weight="400" fill="#111827" text-anchor="start">position</text>
+<text x="1334" y="1341" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">SMALLINT</text>
+<line x1="1148" y1="1372" x2="1340" y2="1372" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1365" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="1174" y="1365" font-size="11" font-weight="400" fill="#111827" text-anchor="start">doi</text>
+<text x="1334" y="1365" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(64)</text>
+<line x1="1148" y1="1396" x2="1340" y2="1396" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1389" font-size="11" font-weight="400" fill="#111827" text-anchor="start">doi_status</text>
+<text x="1334" y="1389" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(4)</text>
+<line x1="1148" y1="1420" x2="1340" y2="1420" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1413" font-size="11" font-weight="400" fill="#111827" text-anchor="start">doi_response</text>
+<text x="1334" y="1413" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="1148" y1="1444" x2="1340" y2="1444" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1437" font-size="11" font-weight="400" fill="#111827" text-anchor="start">article_status</text>
+<text x="1334" y="1437" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(3)</text>
+<line x1="1148" y1="1468" x2="1340" y2="1468" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1461" font-size="11" font-weight="400" fill="#111827" text-anchor="start">correction_note</text>
+<text x="1334" y="1461" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1148" y1="1492" x2="1340" y2="1492" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1485" font-size="11" font-weight="400" fill="#111827" text-anchor="start">retraction_reason</text>
+<text x="1334" y="1485" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1148" y1="1516" x2="1340" y2="1516" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1509" font-size="11" font-weight="400" fill="#111827" text-anchor="start">views</text>
+<text x="1334" y="1509" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">INT UNSIGNED</text>
+<line x1="1148" y1="1540" x2="1340" y2="1540" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1533" font-size="11" font-weight="400" fill="#111827" text-anchor="start">downloads</text>
+<text x="1334" y="1533" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">INT UNSIGNED</text>
+<line x1="1148" y1="1564" x2="1340" y2="1564" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1557" font-size="11" font-weight="400" fill="#111827" text-anchor="start">deleted_at</text>
+<text x="1334" y="1557" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="1148" y1="1588" x2="1340" y2="1588" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1581" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1334" y="1581" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="announcements">
+<rect x="60" y="1688" width="230" height="284" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="60" y="1688" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="60" y="1710" width="230" height="12" fill="#1B6E5A"/>
+<text x="72" y="1710" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">announcements</text>
+<text x="278" y="1710" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">10 kolom</text>
+<text x="72" y="1739" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="94" y="1739" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="254" y="1739" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="68" y1="1770" x2="260" y2="1770" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1763" font-size="11" font-weight="400" fill="#111827" text-anchor="start">title</text>
+<text x="254" y="1763" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="68" y1="1794" x2="260" y2="1794" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1787" font-size="11" font-weight="400" fill="#111827" text-anchor="start">body</text>
+<text x="254" y="1787" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="68" y1="1818" x2="260" y2="1818" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1811" font-size="11" font-weight="400" fill="#111827" text-anchor="start">type</text>
+<text x="254" y="1811" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(4)</text>
+<line x1="68" y1="1842" x2="260" y2="1842" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1835" font-size="11" font-weight="400" fill="#111827" text-anchor="start">starts_at</text>
+<text x="254" y="1835" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="68" y1="1866" x2="260" y2="1866" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1859" font-size="11" font-weight="400" fill="#111827" text-anchor="start">ends_at</text>
+<text x="254" y="1859" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">DATETIME</text>
+<line x1="68" y1="1890" x2="260" y2="1890" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1883" font-size="11" font-weight="400" fill="#111827" text-anchor="start">is_active</text>
+<text x="254" y="1883" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="68" y1="1914" x2="260" y2="1914" stroke="#F1F5F9" stroke-width="1"/>
+<text x="72" y="1907" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="94" y="1907" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_by</text>
+<text x="254" y="1907" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="68" y1="1938" x2="260" y2="1938" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1931" font-size="11" font-weight="400" fill="#111827" text-anchor="start">deleted_at</text>
+<text x="254" y="1931" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="68" y1="1962" x2="260" y2="1962" stroke="#F1F5F9" stroke-width="1"/>
+<text x="94" y="1955" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="254" y="1955" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="subscribers">
+<rect x="330" y="1688" width="230" height="164" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="330" y="1688" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="330" y="1710" width="230" height="12" fill="#1B6E5A"/>
+<text x="342" y="1710" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">subscribers</text>
+<text x="548" y="1710" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">5 kolom</text>
+<text x="342" y="1739" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="364" y="1739" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="524" y="1739" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="338" y1="1770" x2="530" y2="1770" stroke="#F1F5F9" stroke-width="1"/>
+<text x="342" y="1763" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="364" y="1763" font-size="11" font-weight="400" fill="#111827" text-anchor="start">email</text>
+<text x="524" y="1763" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(190)</text>
+<line x1="338" y1="1794" x2="530" y2="1794" stroke="#F1F5F9" stroke-width="1"/>
+<text x="342" y="1787" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="364" y="1787" font-size="11" font-weight="400" fill="#111827" text-anchor="start">token</text>
+<text x="524" y="1787" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">CHAR(64)</text>
+<line x1="338" y1="1818" x2="530" y2="1818" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="1811" font-size="11" font-weight="400" fill="#111827" text-anchor="start">is_confirmed</text>
+<text x="524" y="1811" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="338" y1="1842" x2="530" y2="1842" stroke="#F1F5F9" stroke-width="1"/>
+<text x="364" y="1835" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="524" y="1835" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="settings_cache">
+<rect x="600" y="1688" width="230" height="116" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="600" y="1688" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="600" y="1710" width="230" height="12" fill="#1B6E5A"/>
+<text x="612" y="1710" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">settings_cache</text>
+<text x="818" y="1710" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">3 kolom</text>
+<text x="612" y="1739" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="634" y="1739" font-size="11" font-weight="700" fill="#111827" text-anchor="start">key</text>
+<text x="794" y="1739" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(100)</text>
+<line x1="608" y1="1770" x2="800" y2="1770" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="1763" font-size="11" font-weight="400" fill="#111827" text-anchor="start">value</text>
+<text x="794" y="1763" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="608" y1="1794" x2="800" y2="1794" stroke="#F1F5F9" stroke-width="1"/>
+<text x="634" y="1787" font-size="11" font-weight="400" fill="#111827" text-anchor="start">updated_at</text>
+<text x="794" y="1787" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="publication_metadata">
+<rect x="1140" y="1688" width="230" height="212" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1140" y="1688" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1140" y="1710" width="230" height="12" fill="#1B6E5A"/>
+<text x="1152" y="1710" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">publication_metadata</text>
+<text x="1358" y="1710" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">7 kolom</text>
+<text x="1152" y="1739" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1174" y="1739" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1334" y="1739" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="1770" x2="1340" y2="1770" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1763" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1174" y="1763" font-size="11" font-weight="400" fill="#111827" text-anchor="start">publication_id</text>
+<text x="1334" y="1763" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1148" y1="1794" x2="1340" y2="1794" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1787" font-size="8.5" font-weight="700" fill="#7C3AED" text-anchor="start">UK</text>
+<text x="1174" y="1787" font-size="11" font-weight="400" fill="#111827" text-anchor="start">lang</text>
+<text x="1334" y="1787" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">CHAR(2)</text>
+<line x1="1148" y1="1818" x2="1340" y2="1818" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1811" font-size="8.5" font-weight="700" fill="#0D9488" text-anchor="start">FT</text>
+<text x="1174" y="1811" font-size="11" font-weight="400" fill="#111827" text-anchor="start">title</text>
+<text x="1334" y="1811" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(500)</text>
+<line x1="1148" y1="1842" x2="1340" y2="1842" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1835" font-size="8.5" font-weight="700" fill="#0D9488" text-anchor="start">FT</text>
+<text x="1174" y="1835" font-size="11" font-weight="400" fill="#111827" text-anchor="start">abstract</text>
+<text x="1334" y="1835" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TEXT</text>
+<line x1="1148" y1="1866" x2="1340" y2="1866" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1152" y="1859" font-size="8.5" font-weight="700" fill="#0D9488" text-anchor="start">FT</text>
+<text x="1174" y="1859" font-size="11" font-weight="400" fill="#111827" text-anchor="start">keywords</text>
+<text x="1334" y="1859" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">JSON</text>
+<line x1="1148" y1="1890" x2="1340" y2="1890" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1174" y="1883" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1334" y="1883" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="galleys">
+<rect x="1410" y="1688" width="230" height="284" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1410" y="1688" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1410" y="1710" width="230" height="12" fill="#1B6E5A"/>
+<text x="1422" y="1710" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">galleys</text>
+<text x="1628" y="1710" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">10 kolom</text>
+<text x="1422" y="1739" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1444" y="1739" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1604" y="1739" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1418" y1="1770" x2="1610" y2="1770" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1422" y="1763" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1444" y="1763" font-size="11" font-weight="400" fill="#111827" text-anchor="start">publication_id</text>
+<text x="1604" y="1763" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1418" y1="1794" x2="1610" y2="1794" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="1787" font-size="11" font-weight="400" fill="#111827" text-anchor="start">type</text>
+<text x="1604" y="1787" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(5)</text>
+<line x1="1418" y1="1818" x2="1610" y2="1818" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="1811" font-size="11" font-weight="400" fill="#111827" text-anchor="start">label</text>
+<text x="1604" y="1811" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(150)</text>
+<line x1="1418" y1="1842" x2="1610" y2="1842" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="1835" font-size="11" font-weight="400" fill="#111827" text-anchor="start">path</text>
+<text x="1604" y="1835" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(500)</text>
+<line x1="1418" y1="1866" x2="1610" y2="1866" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="1859" font-size="11" font-weight="400" fill="#111827" text-anchor="start">mime_type</text>
+<text x="1604" y="1859" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(100)</text>
+<line x1="1418" y1="1890" x2="1610" y2="1890" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="1883" font-size="11" font-weight="400" fill="#111827" text-anchor="start">size_bytes</text>
+<text x="1604" y="1883" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">INT UNSIGNED</text>
+<line x1="1418" y1="1914" x2="1610" y2="1914" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="1907" font-size="11" font-weight="400" fill="#111827" text-anchor="start">is_version_of_record</text>
+<text x="1604" y="1907" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TINYINT(1)</text>
+<line x1="1418" y1="1938" x2="1610" y2="1938" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="1931" font-size="11" font-weight="400" fill="#111827" text-anchor="start">deleted_at</text>
+<text x="1604" y="1931" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+<line x1="1418" y1="1962" x2="1610" y2="1962" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1444" y="1955" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1604" y="1955" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<g id="article_usage">
+<rect x="1680" y="1688" width="230" height="236" rx="6" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.2"/>
+<rect x="1680" y="1688" width="230" height="34" rx="6" fill="#1B6E5A"/>
+<rect x="1680" y="1710" width="230" height="12" fill="#1B6E5A"/>
+<text x="1692" y="1710" font-size="13.5" font-weight="700" fill="#FFFFFF" text-anchor="start">article_usage</text>
+<text x="1898" y="1710" font-size="10" font-weight="400" fill="#D1FAE5" text-anchor="end">8 kolom</text>
+<text x="1692" y="1739" font-size="8.5" font-weight="700" fill="#B45309" text-anchor="start">PK</text>
+<text x="1714" y="1739" font-size="11" font-weight="700" fill="#111827" text-anchor="start">id</text>
+<text x="1874" y="1739" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1688" y1="1770" x2="1880" y2="1770" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1692" y="1763" font-size="8.5" font-weight="700" fill="#2563EB" text-anchor="start">FK</text>
+<text x="1714" y="1763" font-size="11" font-weight="400" fill="#111827" text-anchor="start">publication_id</text>
+<text x="1874" y="1763" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">BIGINT UNSIGNED</text>
+<line x1="1688" y1="1794" x2="1880" y2="1794" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="1787" font-size="11" font-weight="400" fill="#111827" text-anchor="start">type</text>
+<text x="1874" y="1787" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">ENUM(2)</text>
+<line x1="1688" y1="1818" x2="1880" y2="1818" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="1811" font-size="11" font-weight="400" fill="#111827" text-anchor="start">ip_hash</text>
+<text x="1874" y="1811" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">CHAR(64)</text>
+<line x1="1688" y1="1842" x2="1880" y2="1842" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="1835" font-size="11" font-weight="400" fill="#111827" text-anchor="start">session_hash</text>
+<text x="1874" y="1835" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">CHAR(64)</text>
+<line x1="1688" y1="1866" x2="1880" y2="1866" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="1859" font-size="11" font-weight="400" fill="#111827" text-anchor="start">country</text>
+<text x="1874" y="1859" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">CHAR(2)</text>
+<line x1="1688" y1="1890" x2="1880" y2="1890" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="1883" font-size="11" font-weight="400" fill="#111827" text-anchor="start">user_agent</text>
+<text x="1874" y="1883" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">VARCHAR(255)</text>
+<line x1="1688" y1="1914" x2="1880" y2="1914" stroke="#F1F5F9" stroke-width="1"/>
+<text x="1714" y="1907" font-size="11" font-weight="400" fill="#111827" text-anchor="start">created_at</text>
+<text x="1874" y="1907" font-size="9.5" font-weight="400" fill="#94A3B8" text-anchor="end">TIMESTAMP</text>
+</g>
+<polyline points="175,346 175,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="150" y="463" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">user_id</text>
+<text x="188" y="364" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="188" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="560,228 600,228" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="580" y="220" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">author_id</text>
+<text x="567" y="218" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="593" y="218" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="350,346 350,568 425,568 425,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="388" y="562" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">user_id</text>
+<text x="413" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="500,346 500,512 1230,512 1230,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="860" y="506" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">reviewer_id</text>
+<text x="1218" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="470,346 470,519 1500,519 1500,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="990" y="513" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">editor_id</text>
+<text x="1488" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="540,346 540,533 2040,533 2040,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1290" y="527" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">sender / recipient</text>
+<text x="2028" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="620,466 620,547 465,547 465,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="542" y="541" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id</text>
+<text x="453" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="715,466 715,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="762" y="523" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id</text>
+<text x="727" y="482" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="727" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="800,466 800,505 985,505 985,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="892" y="499" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id</text>
+<text x="973" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="790,466 790,498 1280,498 1280,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1035" y="492" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id</text>
+<text x="1268" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="780,466 780,526 1550,526 1550,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1165" y="520" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id</text>
+<text x="1538" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="820,466 820,540 1770,540 1770,580" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1295" y="534" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id</text>
+<text x="1758" y="566" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="310,346 302,346 302,1040 445,1040 445,1122" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="250" y="700" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">user_id</text>
+<text x="433" y="1104" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="60,270 30,270 30,1216 60,1216" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="46" y="740" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">user_id</text>
+<text x="54" y="282" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="46" y="1206" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="870,204 830,204" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="850" y="196" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">section_id</text>
+<text x="864" y="194" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="836" y="194" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="610,466 610,561 318,561 318,1050 715,1050 715,1122" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="460" y="555" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id</text>
+<text x="703" y="1104" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="845,466 845,575 850,575 850,1060 985,1060 985,1122" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="915" y="1054" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id</text>
+<text x="973" y="1104" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="825,466 825,554 1120,554 1120,1070 1235,1070 1235,1122" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="975" y="548" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">submission_id (1:1)</text>
+<text x="1223" y="1104" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<polyline points="1370,228 1390,228 1390,1080 1280,1080 1280,1122" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1398" y="700" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">issue_id</text>
+<text x="1376" y="240" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="1268" y="1104" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="1098,298 1110,298 1110,1162 1140,1162" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1100" y="700" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">section_id</text>
+<text x="1090" y="310" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="1128" y="1154" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="870,734 830,734" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="850" y="726" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">revision_id</text>
+<text x="864" y="724" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="836" y="724" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="1255,1598 1255,1688" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1298" y="1643" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">publication_id</text>
+<text x="1267" y="1614" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="1267" y="1676" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="1290,1598 1290,1608 1525,1608 1525,1688" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1407" y="1602" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">publication_id</text>
+<text x="1302" y="1612" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="1513" y="1676" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+<polyline points="1320,1598 1320,1620 1795,1620 1795,1688" fill="none" stroke="#94A3B8" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="1557" y="1614" font-size="10" font-weight="400" fill="#64748B" text-anchor="middle">publication_id</text>
+<text x="1332" y="1612" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">1</text>
+<text x="1783" y="1676" font-size="10.5" font-weight="700" fill="#475569" text-anchor="middle">N</text>
+</svg>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="940" viewBox="0 0 1440 940" font-family="Inter, Roboto, 'Segoe UI', Arial, sans-serif">
+<rect width="1440" height="940" fill="#F5F6F8"/>
+<g id="sidebar">
+<rect x="0" y="0" width="240" height="940" fill="#0F172A"/>
+<circle cx="28" cy="34" r="16" fill="#1B6E5A"/>
+<text x="32" y="39" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">J</text>
+<text x="54" y="40" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="start">JOSHNU</text>
+<rect x="12" y="76" width="216" height="36" rx="8" fill="#1B6E5A"/>
+<text x="28" y="100" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="start">Dashboard</text>
+<text x="28" y="144" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Submissions (12)</text>
+<text x="28" y="188" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Reviewers (48)</text>
+<text x="28" y="232" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Issues (7)</text>
+<text x="28" y="276" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Messages (2)</text>
+<line x1="20" y1="316" x2="220" y2="316" stroke="#1E293B" stroke-width="1"/>
+<text x="28" y="344" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Announcements</text>
+<text x="28" y="384" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Users</text>
+<text x="28" y="424" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Settings</text>
+<text x="28" y="464" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Reports</text>
+<text x="28" y="504" font-size="13" font-weight="400" fill="#94A3B8" text-anchor="start">Audit Log</text>
+<circle cx="30" cy="896" r="14" fill="#334155"/>
+<text x="54" y="892" font-size="12" font-weight="600" fill="#E2E8F0" text-anchor="start">Dr. Andi Wijaya</text>
+<text x="54" y="908" font-size="10.5" font-weight="400" fill="#94A3B8" text-anchor="start">Section Editor</text>
+</g>
+<g id="topbar">
+<rect x="240" y="0" width="1200" height="56" fill="#FFFFFF"/>
+<line x1="240" y1="56" x2="1440" y2="56" stroke="#E5E7EB" stroke-width="1"/>
+<text x="272" y="35" font-size="15" font-weight="700" fill="#111827" text-anchor="start">DASHBOARD</text>
+<circle cx="1316" cy="28" r="11" fill="none" stroke="#6B7280" stroke-width="1.4"/>
+<line x1="1316" y1="39" x2="1316" y2="43" stroke="#6B7280" stroke-width="1.4"/>
+<circle cx="1330" cy="20" r="4" fill="#EF4444"/>
+<text x="1330" y="24" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+<circle cx="1388" cy="28" r="16" fill="#CBD5E1"/>
+<text x="1392" y="33" font-size="12" font-weight="700" fill="#111827" text-anchor="middle">A</text>
+</g>
+<g id="alert-sla">
+<rect x="272" y="80" width="1136" height="56" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1"/>
+<text x="296" y="113" font-size="13" font-weight="500" fill="#92400E" text-anchor="start">⚠  SLA: 2 naskah telah &gt; 30 hari di tahap UNDER REVIEW — segera tindak lanjuti.</text>
+<text x="1360" y="113" font-size="12.5" font-weight="600" fill="#92400E" text-anchor="end">Lihat →</text>
+</g>
+<g id="cards-stage">
+<rect x="272" y="152" width="272" height="92" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="272" y="152" width="272" height="5" rx="2" fill="#1B6E5A"/>
+<text x="292" y="208" font-size="30" font-weight="700" fill="#1B6E5A" text-anchor="start">5</text>
+<text x="338" y="196" font-size="11.5" font-weight="700" fill="#6B7280" text-anchor="start">SUBMITTED</text>
+<text x="338" y="212" font-size="10.5" font-weight="400" fill="#6B7280" text-anchor="start">naskah</text>
+<rect x="560" y="152" width="272" height="92" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="560" y="152" width="272" height="5" rx="2" fill="#2563EB"/>
+<text x="580" y="208" font-size="30" font-weight="700" fill="#2563EB" text-anchor="start">3</text>
+<text x="626" y="196" font-size="11.5" font-weight="700" fill="#6B7280" text-anchor="start">UNDER REVIEW</text>
+<text x="626" y="212" font-size="10.5" font-weight="400" fill="#6B7280" text-anchor="start">naskah</text>
+<rect x="848" y="152" width="272" height="92" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="848" y="152" width="272" height="5" rx="2" fill="#7C3AED"/>
+<text x="868" y="208" font-size="30" font-weight="700" fill="#7C3AED" text-anchor="start">2</text>
+<text x="914" y="196" font-size="11.5" font-weight="700" fill="#6B7280" text-anchor="start">DECISION</text>
+<text x="914" y="212" font-size="10.5" font-weight="400" fill="#6B7280" text-anchor="start">naskah</text>
+<rect x="1136" y="152" width="272" height="92" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="1136" y="152" width="272" height="5" rx="2" fill="#16A34A"/>
+<text x="1156" y="208" font-size="30" font-weight="700" fill="#16A34A" text-anchor="start">1</text>
+<text x="1202" y="196" font-size="11.5" font-weight="700" fill="#6B7280" text-anchor="start">ACCEPTED</text>
+<text x="1202" y="212" font-size="10.5" font-weight="400" fill="#6B7280" text-anchor="start">naskah</text>
+</g>
+<g id="queue-table">
+<rect x="272" y="260" width="1136" height="620" rx="10" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="296" y="296" font-size="14" font-weight="700" fill="#111827" text-anchor="start">QUEUE — UNDER REVIEW (ronde berjalan)</text>
+<text x="1384" y="296" font-size="12" font-weight="400" fill="#6B7280" text-anchor="end">3 naskah</text>
+<rect x="296" y="312" width="120" height="34" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="308" y="333" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Section ▾</text>
+<rect x="428" y="312" width="120" height="34" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="440" y="333" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Author ▾</text>
+<rect x="560" y="312" width="120" height="34" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="572" y="333" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Round ▾</text>
+<rect x="692" y="312" width="300" height="34" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="704" y="333" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Cari: judul / penulis / no. referensi…</text>
+<line x1="296" y1="372" x2="1384" y2="372" stroke="#E5E7EB" stroke-width="1"/>
+<text x="306" y="396" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="start">REF</text>
+<text x="450" y="396" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="start">JUDUL</text>
+<text x="830" y="396" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="start">PENULIS</text>
+<text x="1040" y="396" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="start">HARI</text>
+<text x="1130" y="396" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="start">REVIEW</text>
+<text x="1240" y="396" font-size="10.5" font-weight="700" fill="#6B7280" text-anchor="start">AKSI</text>
+<text x="306" y="424" font-size="12" font-weight="600" fill="#1B6E5A" text-anchor="start">JOSHNU-2026-0042</text>
+<text x="450" y="424" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">Taman Kota dan Kesehatan Mental</text>
+<text x="830" y="424" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">A. Budi, dkk.</text>
+<text x="1040" y="424" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">12 hari</text>
+<rect x="1130" y="410" width="54" height="22" rx="11" fill="#E6F2EF"/>
+<text x="1157" y="424" font-size="11" font-weight="600" fill="#145244" text-anchor="middle">1/2</text>
+<rect x="1240" y="408" width="60" height="26" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1270" y="424" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">Buka</text>
+<rect x="1306" y="408" width="74" height="26" rx="6" fill="#1B6E5A"/>
+<text x="1343" y="424" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Assign</text>
+<line x1="296" y1="442" x2="1384" y2="442" stroke="#F1F5F9" stroke-width="1"/>
+<text x="306" y="486" font-size="12" font-weight="600" fill="#1B6E5A" text-anchor="start">JOSHNU-2026-0041</text>
+<text x="450" y="486" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">Walkability Lansia di Kawasan Kompak</text>
+<text x="830" y="486" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">L. Manurung</text>
+<text x="1040" y="486" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">19 hari</text>
+<rect x="1130" y="472" width="54" height="22" rx="11" fill="#E6F2EF"/>
+<text x="1157" y="486" font-size="11" font-weight="600" fill="#145244" text-anchor="middle">2/2</text>
+<rect x="1240" y="470" width="60" height="26" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1270" y="486" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">Buka</text>
+<rect x="1306" y="470" width="74" height="26" rx="6" fill="#1B6E5A"/>
+<text x="1343" y="486" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Assign</text>
+<line x1="296" y1="504" x2="1384" y2="504" stroke="#F1F5F9" stroke-width="1"/>
+<text x="306" y="548" font-size="12" font-weight="600" fill="#1B6E5A" text-anchor="start">JOSHNU-2026-0038</text>
+<text x="450" y="548" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">Green Roof &amp; Urban Heat: Eksperimen</text>
+<text x="830" y="548" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">S. Wibowo, T. Anwar</text>
+<text x="1040" y="548" font-size="12" font-weight="600" fill="#92400E" text-anchor="start">31 hari</text>
+<rect x="1130" y="534" width="54" height="22" rx="11" fill="#FEF3C7"/>
+<text x="1157" y="548" font-size="11" font-weight="600" fill="#92400E" text-anchor="middle">0/2</text>
+<rect x="1240" y="532" width="60" height="26" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1270" y="548" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">Buka</text>
+<rect x="1306" y="532" width="74" height="26" rx="6" fill="#1B6E5A"/>
+<text x="1343" y="548" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Assign</text>
+<line x1="296" y1="566" x2="1384" y2="566" stroke="#F1F5F9" stroke-width="1"/>
+<text x="306" y="610" font-size="12" font-weight="600" fill="#1B6E5A" text-anchor="start">JOSHNU-2026-0035</text>
+<text x="450" y="610" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">Partisipasi Warga &amp; Blok Komunal</text>
+<text x="830" y="610" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">D. Pratama</text>
+<text x="1040" y="610" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">8 hari</text>
+<rect x="1130" y="596" width="54" height="22" rx="11" fill="#E6F2EF"/>
+<text x="1157" y="610" font-size="11" font-weight="600" fill="#145244" text-anchor="middle">1/2</text>
+<rect x="1240" y="594" width="60" height="26" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1270" y="610" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">Buka</text>
+<rect x="1306" y="594" width="74" height="26" rx="6" fill="#1B6E5A"/>
+<text x="1343" y="610" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Assign</text>
+<line x1="296" y1="628" x2="1384" y2="628" stroke="#F1F5F9" stroke-width="1"/>
+<text x="306" y="672" font-size="12" font-weight="600" fill="#1B6E5A" text-anchor="start">JOSHNU-2026-0031</text>
+<text x="450" y="672" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">Kebijakan ODP dan Ekonomi Sirkular</text>
+<text x="830" y="672" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">R. Sari</text>
+<text x="1040" y="672" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">27 hari</text>
+<rect x="1130" y="658" width="54" height="22" rx="11" fill="#E6F2EF"/>
+<text x="1157" y="672" font-size="11" font-weight="600" fill="#145244" text-anchor="middle">2/2</text>
+<rect x="1240" y="656" width="60" height="26" rx="6" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1270" y="672" font-size="11.5" font-weight="500" fill="#111827" text-anchor="middle">Buka</text>
+<rect x="1306" y="656" width="74" height="26" rx="6" fill="#1B6E5A"/>
+<text x="1343" y="672" font-size="11.5" font-weight="600" fill="#FFFFFF" text-anchor="middle">Assign</text>
+<line x1="296" y1="690" x2="1384" y2="690" stroke="#F1F5F9" stroke-width="1"/>
+<text x="296" y="760" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">‹  1  2  3  ›</text>
+<text x="1384" y="760" font-size="12" font-weight="400" fill="#6B7280" text-anchor="end">Sort: [hari di tahap ▾]</text>
+</g>
+</svg>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980" font-family="Inter, Roboto, 'Segoe UI', Arial, sans-serif">
+<rect width="1440" height="980" fill="#F5F6F8"/>
+<g id="header">
+<rect x="0" y="0" width="1440" height="64" fill="#FFFFFF"/>
+<circle cx="36" cy="32" r="16" fill="#1B6E5A"/>
+<text x="40" y="37" font-size="14" font-weight="700" fill="#FFFFFF" text-anchor="middle">J</text>
+<text x="64" y="30" font-size="17" font-weight="700" fill="#111827" text-anchor="start">JOSHNU</text>
+<text x="64" y="46" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start">Journal of Sustainable Health and New Urbanism</text>
+<text x="1188" y="38" font-size="12.5" font-weight="500" fill="#6B7280" text-anchor="start">ID ▾</text>
+<rect x="1232" y="16" width="28" height="28" rx="6" fill="none" stroke="#E5E7EB" stroke-width="1"/>
+<circle cx="1244" cy="28" r="6" fill="none" stroke="#6B7280" stroke-width="1.4"/>
+<line x1="1248" y1="32" x2="1252" y2="36" stroke="#6B7280" stroke-width="1.4"/>
+<rect x="1276" y="14" width="62" height="36" rx="8" fill="none" stroke="#E5E7EB" stroke-width="1"/>
+<text x="1307" y="36" font-size="13" font-weight="500" fill="#111827" text-anchor="middle">Login</text>
+<rect x="1350" y="14" width="78" height="36" rx="8" fill="#1B6E5A"/>
+<text x="1389" y="36" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Submit</text>
+<line x1="0" y1="64" x2="1440" y2="64" stroke="#E5E7EB" stroke-width="1"/>
+<text x="80" y="94" font-size="13.5" font-weight="600" fill="#1B6E5A" text-anchor="start">Home</text>
+<line x1="78" y1="102" x2="113" y2="102" stroke="#1B6E5A" stroke-width="2.5"/>
+<text x="144" y="94" font-size="13.5" font-weight="500" fill="#6B7280" text-anchor="start">About</text>
+<text x="215" y="94" font-size="13.5" font-weight="500" fill="#6B7280" text-anchor="start">Current Issue</text>
+<text x="345" y="94" font-size="13.5" font-weight="500" fill="#6B7280" text-anchor="start">Archive</text>
+<text x="431" y="94" font-size="13.5" font-weight="500" fill="#6B7280" text-anchor="start">Announcements</text>
+<line x1="0" y1="104" x2="1440" y2="104" stroke="#E5E7EB" stroke-width="1"/>
+</g>
+<g id="submission-form">
+<rect x="240" y="132" width="960" height="796" rx="12" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="280" y="172" font-size="11.5" font-weight="400" fill="#6B7280" text-anchor="start">Akun Saya  ›  Submit Naskah Baru</text>
+<text x="280" y="210" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Submission Baru</text>
+<circle cx="294" cy="246" r="14" fill="#1B6E5A" stroke="#1B6E5A" stroke-width="1.4"/>
+<text x="294" y="251" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+<text x="318" y="251" font-size="12.5" font-weight="600" fill="#111827" text-anchor="start">Metadata</text>
+<line x1="386" y1="246" x2="484" y2="246" stroke="#E5E7EB" stroke-width="1.4"/>
+<circle cx="518" cy="246" r="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
+<text x="518" y="251" font-size="12" font-weight="700" fill="#6B7280" text-anchor="middle">2</text>
+<text x="542" y="251" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Penulis</text>
+<line x1="604" y1="246" x2="708" y2="246" stroke="#E5E7EB" stroke-width="1.4"/>
+<circle cx="742" cy="246" r="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
+<text x="742" y="251" font-size="12" font-weight="700" fill="#6B7280" text-anchor="middle">3</text>
+<text x="766" y="251" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">File</text>
+<line x1="807" y1="246" x2="932" y2="246" stroke="#E5E7EB" stroke-width="1.4"/>
+<circle cx="966" cy="246" r="14" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.4"/>
+<text x="966" y="251" font-size="12" font-weight="700" fill="#6B7280" text-anchor="middle">4</text>
+<text x="990" y="251" font-size="12.5" font-weight="400" fill="#6B7280" text-anchor="start">Konfirmasi</text>
+<text x="280" y="288" font-size="12" font-weight="600" fill="#111827" text-anchor="start">Section *</text>
+<rect x="280" y="300" width="420" height="40" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="292" y="325" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Public Health ▾</text>
+<text x="280" y="368" font-size="12" font-weight="600" fill="#111827" text-anchor="start">Judul (ID) *</text>
+<rect x="280" y="380" width="880" height="40" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+<text x="292" y="405" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Taman Kota dan Kesehatan Mental: Studi Longitudinal di Kota Menengah</text>
+<text x="280" y="444" font-size="12" font-weight="600" fill="#111827" text-anchor="start">Judul (EN) *</text>
+<rect x="280" y="456" width="880" height="40" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+<text x="292" y="481" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Urban Parks and Mental Health: A Longitudinal Study</text>
+<text x="280" y="528" font-size="12" font-weight="600" fill="#111827" text-anchor="start">Abstrak (ID) *   (min. 150 kata)</text>
+<rect x="280" y="540" width="880" height="96" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="292" y="566" font-size="12.5" font-weight="400" fill="#111827" text-anchor="start">Penelitian ini mengkaji hubungan antara frekuensi penggunaan taman kota dengan</text>
+<text x="292" y="586" font-size="12.5" font-weight="400" fill="#111827" text-anchor="start">indeks kesehatan mental warga kota menengah menggunakan desain longitudinal</text>
+<text x="292" y="606" font-size="12.5" font-weight="400" fill="#111827" text-anchor="start">selama 12 bulan (n = 1.240). Hasil menunjukkan korelasi positif signifikan…</text>
+<text x="1148" y="628" font-size="10.5" font-weight="400" fill="#1B6E5A" text-anchor="end">182 kata</text>
+<text x="280" y="664" font-size="12" font-weight="600" fill="#111827" text-anchor="start">Keywords (3–6) *</text>
+<rect x="280" y="676" width="92" height="30" rx="15" fill="#E6F2EF"/>
+<text x="326" y="695" font-size="12" font-weight="500" fill="#145244" text-anchor="middle">taman kota  ×</text>
+<rect x="382" y="676" width="133" height="30" rx="15" fill="#E6F2EF"/>
+<text x="448" y="695" font-size="12" font-weight="500" fill="#145244" text-anchor="middle">kesehatan mental  ×</text>
+<rect x="525" y="676" width="106" height="30" rx="15" fill="#E6F2EF"/>
+<text x="578" y="695" font-size="12" font-weight="500" fill="#145244" text-anchor="middle">urban design  ×</text>
+<rect x="640" y="676" width="96" height="30" rx="15" fill="none" stroke="#E5E7EB" stroke-width="1" stroke-dasharray="4 3"/>
+<text x="688" y="695" font-size="11.5" font-weight="500" fill="#6B7280" text-anchor="middle">+ Tambah</text>
+<text x="280" y="736" font-size="12" font-weight="600" fill="#111827" text-anchor="start">Funding (opsional)</text>
+<rect x="280" y="748" width="420" height="40" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+<text x="292" y="773" font-size="13" font-weight="400" fill="#6B7280" text-anchor="start">Contoh: Dikti 2025</text>
+<text x="724" y="736" font-size="14" font-weight="400" fill="#111827" text-anchor="start">Konflik kepentingan (opsional)</text>
+<rect x="724" y="748" width="436" height="40" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1.2"/>
+<text x="736" y="773" font-size="13" font-weight="400" fill="#111827" text-anchor="start">Tidak ada</text>
+<rect x="280" y="812" width="18" height="18" rx="4" fill="#FFFFFF" stroke="#1B6E5A" stroke-width="1.6"/>
+<text x="286" y="826" font-size="12" font-weight="700" fill="#1B6E5A" text-anchor="start">✓</text>
+<text x="308" y="826" font-size="12.5" font-weight="500" fill="#111827" text-anchor="start">Lisensi: CC BY 4.0 (default) — hak cipta tetap milik penulis</text>
+<rect x="280" y="848" width="18" height="18" rx="4" fill="#FFFFFF" stroke="#1B6E5A" stroke-width="1.6"/>
+<text x="286" y="862" font-size="12" font-weight="700" fill="#1B6E5A" text-anchor="start">✓</text>
+<text x="308" y="862" font-size="12.5" font-weight="400" fill="#111827" text-anchor="start">Naskah orisinal</text>
+<rect x="580" y="848" width="18" height="18" rx="4" fill="#FFFFFF" stroke="#1B6E5A" stroke-width="1.6"/>
+<text x="586" y="862" font-size="12" font-weight="700" fill="#1B6E5A" text-anchor="start">✓</text>
+<text x="608" y="862" font-size="12.5" font-weight="400" fill="#111827" text-anchor="start">Belum dipublikasikan</text>
+<rect x="880" y="848" width="18" height="18" rx="4" fill="#FFFFFF" stroke="#1B6E5A" stroke-width="1.6"/>
+<text x="886" y="862" font-size="12" font-weight="700" fill="#1B6E5A" text-anchor="start">✓</text>
+<text x="908" y="862" font-size="12.5" font-weight="400" fill="#111827" text-anchor="start">Persetujuan co-author</text>
+<text x="280" y="908" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">Draf tersimpan otomatis 09:41</text>
+<rect x="880" y="884" width="120" height="40" rx="8" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+<text x="940" y="908" font-size="13" font-weight="500" fill="#111827" text-anchor="middle">← Kembali</text>
+<rect x="1012" y="884" width="148" height="40" rx="8" fill="#1B6E5A"/>
+<text x="1086" y="908" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="middle">Lanjut: Penulis →</text>
+</g>
+</svg>
