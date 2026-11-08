@@ -14,7 +14,7 @@
 
     <div class="rounded-xl border border-gray-200 bg-white divide-y divide-gray-100">
         @forelse($notifications as $n)
-            <a href="{{ $n->data['url'] ?? route('account.submissions.index') }}" class="flex items-start gap-3 p-4 {{ $n->read_at ? '' : 'bg-primary-light/40' }}">
+            <a href="{{ $n->url ?: route('account.submissions.index') }}" class="flex items-start gap-3 p-4 {{ $n->read_at ? '' : 'bg-primary-light/40' }}">
                 <span class="mt-1.5 h-2 w-2 rounded-full shrink-0 {{ $n->read_at ? 'bg-gray-200' : 'bg-primary' }}"></span>
                 <div class="flex-1 min-w-0">
                     <p class="text-sm {{ $n->read_at ? 'text-gray-600' : 'text-gray-900 font-medium' }}">{{ $n->label() }}</p>

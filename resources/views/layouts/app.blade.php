@@ -204,7 +204,7 @@
         </div>
         <div>
             <p class="font-semibold text-white mb-2">{{ __('home.subscribe_title') }}</p>
-            <form method="POST" action="{{ route('subscribe.store') }}" class="flex gap-2">
+            <form method="POST" action="{{ route('subscribe.store') }}" data-ajax data-no-refresh class="flex gap-2">
                 @csrf
                 <input type="email" name="email" required placeholder="email@instansi.ac.id" class="flex-1 min-w-0 rounded-lg bg-slate-800 border border-slate-700 px-3 py-1.5 text-sm placeholder:text-gray-500 focus:outline-none focus:ring-1 focus:ring-primary">
                 <button class="bg-primary hover:bg-primary-dark text-white text-sm rounded-lg px-3">{{ __('home.subscribe_btn') }}</button>

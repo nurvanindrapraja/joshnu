@@ -4,6 +4,7 @@ namespace Tests\Feature;
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Mail;
 use Tests\TestCase;
 
 class SmokeTest extends TestCase
@@ -105,6 +106,23 @@ class SmokeTest extends TestCase
         // unsubscribe
         $this->get('/unsubscribe?token='.$subscriber->token)->assertOk();
         $this->assertNull(\App\Models\Subscriber::where('email', 'baru@example.com')->first());
+    }
+
+    public function test_subscribe_via_ajax_from_footer(): void
+    {
+        Mail::fake();
+        $this->seed();
+
+        // form footer memakai AJAX + mode tanpa refresh <main>
+        $this->get('/')->assertOk()->assertSee('data-no-refresh', false);
+
+        // POST AJAX → JSON (bukan halaman konfirmasi)
+        $this->postJson('/subscribe', ['email' => 'ajax-sub@example.com'])
+            ->assertStatus(200)
+            ->assertJsonPath('data.message', 'Tautan konfirmasi telah dikirim ke ajax-sub@example.com');
+
+        $this->assertDatabaseHas('subscribers', ['email' => 'ajax-sub@example.com', 'is_confirmed' => 0]);
+        Mail::assertQueued(\App\Mail\SubscriptionConfirm::class);
     }
 
     public function test_role_guard(): void

@@ -21,6 +21,53 @@ class Notification extends Model
         return $this->belongsTo(User::class);
     }
 
+    /**
+     * URL tujuan notifikasi, ditulisi ulang ke host aplikasi saat ini.
+     *
+     * URL disimpan sebagai absolut saat notifikasi dibuat (mis. dari lingkungan
+     * dev → "http://127.0.0.1:8000/..."). Agar link tetap benar ketika aplikasi
+     * dipindah ke hosting, hanya path + query yang diambil lalu digabung dengan
+     * skema + host permintaan berjalan (fallback: APP_URL).
+     */
+    public function getUrlAttribute(): ?string
+    {
+        $url = $this->data['url'] ?? null;
+        if (! is_string($url) || $url === '') {
+            return $url;
+        }
+
+        // Sudah path relatif → gunakan apa adanya.
+        if (str_starts_with($url, '/')) {
+            return $url;
+        }
+
+        $parts = parse_url($url);
+        if (! isset($parts['path'])) {
+            return $url;
+        }
+
+        $path = $parts['path'];
+        $query = isset($parts['query']) ? '?'.$parts['query'] : '';
+        $fragment = isset($parts['fragment']) ? '#'.$parts['fragment'] : '';
+
+        $base = $this->currentBaseUrl();
+
+        return $base.$path.$query.$fragment;
+    }
+
+    private function currentBaseUrl(): string
+    {
+        $request = app('request');
+
+        // Konteks web: gunakan skema + host yang sedang diakses user.
+        // Konteks console/queue: request sintetis berbasis APP_URL.
+        if ($request && $request->getHost()) {
+            return $request->getSchemeAndHttpHost();
+        }
+
+        return rtrim((string) config('app.url'), '/');
+    }
+
     public static function send(int $userId, string $type, array $data = []): void
     {
         static::create([

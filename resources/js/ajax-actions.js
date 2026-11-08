@@ -6,6 +6,8 @@
  *                                  multipart/form-data tetap didukung).
  *  - <form data-ajax data-ajax-redirect> : setelah sukses, navigasi penuh ke
  *                                  data.redirect dari respons JSON (login/register).
+ *  - <form data-ajax data-no-refresh>  : setelah sukses, toast + reset form,
+ *                                  TANPA refresh <main> (mis. subscribe di footer).
  *  - <form data-ajax data-prompt="..."> : tampilkan window.prompt sebelum kirim;
  *                                         hasil disimpan ke input hidden "reason".
  *
@@ -242,7 +244,12 @@ function wire(form) {
                     window.setTimeout(() => { window.location.href = redirectTarget; }, 700);
                     return;
                 }
-                showToast(data?.message || 'Berhasil.', 'success');
+                showToast(data?.message || data?.data?.message || 'Berhasil.', 'success');
+                if (form.hasAttribute('data-no-refresh')) {
+                    // mis. subscribe di footer: cukup toast + reset form
+                    form.reset();
+                    return;
+                }
                 await refreshContent();
                 return;
             }
