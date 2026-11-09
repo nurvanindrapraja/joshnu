@@ -12,6 +12,8 @@
  * AJAX. Loading bar tipis muncul di atas viewport selama proses.
  */
 
+import { setButtonBusy } from './button-loading';
+
 const RESULTS_SELECTOR = '[data-ajax-results]';
 const BAR_ID = 'ajax-loading-bar';
 
@@ -58,12 +60,12 @@ function wireForm(form) {
     const fetchRegion = (url, { push = false } = {}) => {
         const mySeq = ++seq;
         const region = document.querySelector(RESULTS_SELECTOR);
-        if (!region) return;
+        if (!region) return Promise.resolve();
         active++;
         setLoading(true);
         const started = performance.now();
 
-        fetch(url, {
+        return fetch(url, {
             headers: { 'X-Requested-With': 'fetch' },
             credentials: 'same-origin',
         })
@@ -135,7 +137,9 @@ document.addEventListener('click', (e) => {
         e.preventDefault();
         form.reset();
         clearTextInputs(form);
-        form._ajaxFilter.fetch(form._ajaxFilter.basePath, { push: false });
+        setButtonBusy(resetBtn, true);
+        form._ajaxFilter.fetch(form._ajaxFilter.basePath, { push: false })
+            .finally(() => setButtonBusy(resetBtn, false));
         return;
     }
 

@@ -218,7 +218,10 @@ function wire(form) {
 
         form._ajaxBusy = true;
         startProgressBar();
-        const btn = form.querySelector('button');
+        // Tombol yang benar-benar diklik (e.submitter); fallback: tombol pertama.
+        const btn = (e.submitter && e.submitter.tagName === 'BUTTON')
+            ? e.submitter
+            : form.querySelector('button');
         let spinner = null;
         if (btn) {
             btn.disabled = true;

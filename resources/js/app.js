@@ -5,6 +5,7 @@ import Alpine from 'alpinejs';
 
 import { initAjaxFilters } from './ajax-filter';
 import { initAjaxActions } from './ajax-actions';
+import { installGlobalButtonLoading } from './button-loading';
 
 window.Alpine = Alpine;
 
@@ -18,3 +19,7 @@ const rewireRegions = () => {
 window.rewireRegions = rewireRegions;
 
 rewireRegions();
+
+// Spinner + disable pada semua tombol submit (form non-AJAX).
+// Sekali per halaman — listener menempel di document, bukan di <main>.
+installGlobalButtonLoading();
