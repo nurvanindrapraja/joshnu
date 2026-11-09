@@ -56,11 +56,13 @@ export function installGlobalButtonLoading() {
         // Submit dibatalkan handler lain (confirm/prompt inline).
         if (e.defaultPrevented) return;
 
+        // e.submitter = tombol yang diklik (bisa null saat submit via Enter
+        // pada browser lama → fallback ke tombol pertama dengan semantik
+        // submit; tombol tanpa atribut type default-nya submit).
+        // JANGAN pernah memilih tombol type="button" (mis. "Batal").
         const submitter = isActionButton(e.submitter)
             ? e.submitter
-            : isActionButton(form.querySelector('button[type="submit"]'))
-                ? form.querySelector('button[type="submit"]')
-                : null;
+            : (Array.from(form.querySelectorAll('button')).find(isActionButton) || null);
 
         setButtonBusy(submitter, true);
     });

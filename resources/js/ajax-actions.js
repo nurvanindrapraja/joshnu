@@ -218,10 +218,13 @@ function wire(form) {
 
         form._ajaxBusy = true;
         startProgressBar();
-        // Tombol yang benar-benar diklik (e.submitter); fallback: tombol pertama.
-        const btn = (e.submitter && e.submitter.tagName === 'BUTTON')
+        // Tombol yang benar-benar memproses form (e.submitter); fallback: tombol
+        // pertama yang ber-semantik submit — JANGAN pernah tombol Batal
+        // (type="button"), yang bisa jadi tombol pertama di dalam form.
+        const isSubmitButton = (el) => !!el && el.tagName === 'BUTTON' && el.type !== 'button';
+        const btn = isSubmitButton(e.submitter)
             ? e.submitter
-            : form.querySelector('button');
+            : (Array.from(form.querySelectorAll('button')).find(isSubmitButton) || null);
         let spinner = null;
         if (btn) {
             btn.disabled = true;
