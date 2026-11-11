@@ -6,8 +6,13 @@ import Alpine from 'alpinejs';
 import { initAjaxFilters } from './ajax-filter';
 import { initAjaxActions } from './ajax-actions';
 import { installGlobalButtonLoading } from './button-loading';
+import { pageEditorComponent } from './page-editor';
 
 window.Alpine = Alpine;
+
+// Komponen page editor harus didaftarkan sebelum Alpine.start()
+// agar elemen x-data="pageEditor()" sudah menemukannya saat init.
+Alpine.data('pageEditor', pageEditorComponent);
 
 Alpine.start();
 

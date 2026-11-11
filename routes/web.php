@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\AdminAuditLogController;
+use App\Http\Controllers\AdminPageController;
 use App\Http\Controllers\AdminPaymentController;
 use App\Http\Controllers\AdminReportController;
 use App\Http\Controllers\AdminSectionController;
@@ -10,6 +11,7 @@ use App\Http\Controllers\AdminSubscriberController;
 use App\Http\Controllers\AdminUserController;
 use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\DecisionController;
 use App\Http\Controllers\EditorAnnouncementController;
 use App\Http\Controllers\EditorDashboardController;
@@ -65,6 +67,7 @@ Route::get('/article/{slug}/citations', [ArticleController::class, 'citations'])
 Route::get('/article/{slug}/related', [ArticleController::class, 'related'])->name('articles.related');
 Route::get('/announcements', [AnnouncementController::class, 'index'])->name('announcements.index');
 Route::get('/announcements/{announcement}', [AnnouncementController::class, 'show'])->name('announcements.show');
+Route::get('/page/{name}', [PageController::class, 'show'])->where('name', '[a-z0-9-]+')->name('pages.show');
 Route::post('/subscribe', [SubscribeController::class, 'store'])->name('subscribe.store');
 Route::get('/subscribe/confirm', [SubscribeController::class, 'confirm'])->name('subscribe.confirm');
 Route::get('/unsubscribe', [SubscribeController::class, 'unsubscribe'])->name('subscribe.unsubscribe');
@@ -200,6 +203,11 @@ Route::middleware(['auth', 'role:admin'])->prefix('admin')->name('admin.')->grou
     Route::post('/payments/{payment}/verify', [AdminPaymentController::class, 'verify'])->name('payments.verify');
     Route::post('/payments/{payment}/reject', [AdminPaymentController::class, 'reject'])->name('payments.reject');
     Route::get('/subscribers', [AdminSubscriberController::class, 'index'])->name('subscribers.index');
+    Route::get('/pages', [AdminPageController::class, 'index'])->name('pages.index');
+    Route::post('/pages', [AdminPageController::class, 'store'])->name('pages.store');
+    Route::put('/pages/{page}', [AdminPageController::class, 'update'])->name('pages.update');
+    Route::post('/pages/{page}/toggle-active', [AdminPageController::class, 'toggleActive'])->name('pages.toggle');
+    Route::delete('/pages/{page}', [AdminPageController::class, 'destroy'])->name('pages.destroy');
     Route::get('/reports', [AdminReportController::class, 'index'])->name('reports.index');
     Route::get('/reports/usage.csv', [AdminReportController::class, 'usageCsv'])->name('reports.usage.csv');
     Route::get('/reports/editorial.csv', [AdminReportController::class, 'editorialCsv'])->name('reports.editorial.csv');

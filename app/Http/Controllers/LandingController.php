@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Announcement;
 use App\Models\Issue;
 use App\Models\JournalSetting;
+use App\Models\Page;
 use App\Models\Publication;
 use Illuminate\View\View;
 
@@ -22,6 +23,8 @@ class LandingController extends Controller
             ->limit(4)
             ->get();
 
-        return view('public.home', compact('setting', 'announcements', 'currentIssue', 'latestArticles'));
+        $pages = Page::where('is_active', true)->orderBy('title')->get();
+
+        return view('public.home', compact('setting', 'announcements', 'currentIssue', 'latestArticles', 'pages'));
     }
 }

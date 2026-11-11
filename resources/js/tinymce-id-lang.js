@@ -1,0 +1,142 @@
+/**
+ * Terjemahan bahasa Indonesia untuk TinyMCE (self-hosted).
+ * Format mengikuti struktur file language resmi TinyMCE (tinymce.addI18n('id', {...})),
+ * diadaptasi menjadi ESM karena paket npm TinyMCE tidak menyertakan file bahasa.
+ */
+export default {
+    // umum
+    undo: 'Urungkan',
+    redo: 'Ulangi',
+    cut: 'Potong',
+    copy: 'Salin',
+    paste: 'Tempel',
+    selectall: 'Pilih semua',
+    bold: 'Tebal',
+    italic: 'Miring',
+    underline: 'Garis bawah',
+    strikethrough: 'Coret',
+    removeformat: 'Hapus format',
+    fullscreen: 'Layar penuh',
+    code: 'Lihat sumber',
+    help: 'Bantuan',
+    image: 'Sisipkan gambar',
+    hr: 'Sisipkan garis horizontal',
+    charmap: 'Sisipkan karakter khusus',
+
+    // format blok (menu "blocks")
+    blocks: {
+        '': 'Paragraf',
+        p: 'Paragraf',
+        blockquote: 'Kutipan',
+        pre: 'Teks format tetap',
+        h1: 'Judul 1',
+        h2: 'Judul 2',
+        h3: 'Judul 3',
+        h4: 'Judul 4',
+        h5: 'Judul 5',
+        h6: 'Judul 6',
+    },
+
+    // daftar
+    lists: {
+        '': 'Daftar',
+    },
+    advlist: {
+        types: 'Jenis',
+        default: 'Default',
+        definition: 'Definisi',
+        example: 'Contoh',
+        decimal: 'Nomor (1, 2, 3, ...)',
+        loweralpha: 'Huruf kecil (a, b, c, ...)',
+        lowergreek: 'Yunani kecil (α, β, γ, ...)',
+        lowerroman: 'Romawi kecil (i, ii, iii, ...)',
+        upperalpha: 'Huruf besar (A, B, C, ...)',
+        upperroman: 'Romawi besar (I, II, III, ...)',
+        circle: 'Lingkaran',
+        disc: 'Titik',
+        square: 'Persegi',
+        insertunorderedlist: 'Sisipkan/salin daftar poin',
+        insertorderedlist: 'Sisipkan/salin daftar bernomor',
+    },
+    bullist: 'Daftar poin',
+    numlist: 'Daftar nomor',
+
+    // tautan
+    link: {
+        title: 'Sisipkan ubah tautan',
+        ok: 'OK',
+        cancel: 'Batal',
+        general: 'Umum',
+        texttoinsert: 'Teks Sisipan',
+        url: 'Alamat (URL)',
+        titlefield: 'Judul',
+        isexternal: 'Perlakukan URL ini sebagai URL eksternal dan terapkan target="_blank", rel="noopener"',
+        target: 'Target',
+        targetlist: {
+            notselected: 'Tidak dipilih',
+            _blank: 'Jendela baru',
+            _parent: 'Jendela induk',
+            _self: 'Jendela yang sama',
+            _top: 'Jendela teratas',
+        },
+        rel: 'Rel',
+        openinnewwin: 'Buka di jendela baru',
+        popup: 'Popup',
+        popupurl: 'Alamat Popup',
+        popupsize: 'Ukuran',
+        indent: 'Sudut',
+        id: 'Id',
+        classes: 'Kelas',
+        notselected: '<tidak dipilih>',
+    },
+
+    // tabel
+    table: {
+        general: 'Umum',
+        title: 'Sisipkan/ubah tabel',
+        rows: 'Baris',
+        cols: 'Kolom',
+        width: 'Lebar',
+        height: 'Tinggi',
+        border: 'Batas',
+        caption: 'Keterangan',
+        cell: 'Sel',
+        row: 'Baris',
+        column: 'Kolom',
+        scope: 'Ruang lingkup',
+        halign: 'Rata horizontal',
+        valign: 'Rata vertikal',
+        padding: 'Jarak dalam',
+        cellpadding: 'Jarak dalam sel',
+        cellspacing: 'Jarak antar sel',
+        align: 'Rata',
+        none: 'Tidak ada',
+        left: 'Kiri',
+        right: 'Kanan',
+        center: 'Tengah',
+        inserttable: 'Sisipkan tabel',
+        tableprops: 'Properti tabel',
+        rowprops: 'Properti baris',
+        cellprops: 'Properti sel',
+        rowinsertabove: 'Sisipkan baris di atas',
+        rowinsertbelow: 'Sisipkan baris di bawah',
+        rowdelete: 'Hapus baris',
+        colinsertleft: 'Sisipkan kolom di kiri',
+        colinsertright: 'Sisipkan kolom di kanan',
+        coldelete: 'Hapus kolom',
+        mergecells: 'Gabungkan sel',
+        unmergecells: 'Pisahkan sel',
+        delete: 'Hapus',
+    },
+
+    // kode
+    codesample: {
+        title: 'Teks sumber',
+    },
+    code: {
+        title: 'Lihat sumber',
+    },
+
+    // status
+    loading: 'Memuat…',
+};

@@ -59,6 +59,19 @@
     </section>
 </div>
 
+@if($pages->count())
+<div class="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
+    <h2 class="text-lg font-bold text-gray-900 mb-4">{{ __('home.pages') }}</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        @foreach($pages as $pg)
+            <a href="{{ route('pages.show', $pg->name) }}" class="rounded-xl border border-gray-200 bg-white p-4 hover:border-primary transition">
+                <p class="font-medium text-gray-900">{{ $pg->title }}</p>
+            </a>
+        @endforeach
+    </div>
+</div>
+@endif
+
 <div class="max-w-7xl mx-auto px-4 sm:px-6 pb-12">
     <div class="flex items-center justify-between mb-4">
         <h2 class="text-lg font-bold text-gray-900">{{ __('home.latest_articles') }}</h2>

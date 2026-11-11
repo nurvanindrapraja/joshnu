@@ -151,7 +151,9 @@ async function refreshContent() {
     const node = holder.firstElementChild;
     oldMain.replaceWith(node);
 
-    if (parsed.title) document.title = parsed.title.textContent;
+    // Catatan: parsed.title adalah STRING (property Document), bukan elemen.
+    const titleEl = parsed.querySelector('title');
+    if (titleEl && titleEl.textContent.trim()) document.title = titleEl.textContent.trim();
     if (window.Alpine) window.Alpine.initTree(node);
     if (typeof window.rewireRegions === 'function') window.rewireRegions();
 }

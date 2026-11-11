@@ -52,9 +52,9 @@
                 @else
                     <span class="h-10 w-10 rounded-lg bg-primary text-white flex items-center justify-center font-bold">{{ substr($s->short_name, 0, 2) }}</span>
                 @endif
-                <span>
+                <span class="flex items-start gap-3 min-w-0">
                     <span class="block font-bold leading-tight">{{ $s->name }}</span>
-                    @if($s->issn_online)<span class="block text-xs text-gray-500">ISSN e-{{ $s->issn_online }}</span>@endif
+                    @if($s->issn_online)<span class="shrink-0 whitespace-nowrap text-[10px] font-medium text-gray-500 leading-tight mt-0.5">ISSN e-{{ $s->issn_online }}</span>@endif
                 </span>
             </a>
             <div class="flex items-center gap-2">
